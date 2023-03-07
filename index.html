@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Гранд Хаус</title>
+    <link rel="stylesheet" type="text/css" href="style/root.css"/>
+</head>
+<body>
+<header id="header" style="background-color: #ffff;z-index: 10" class="header p-fixed full-width-percent d-flex f-column align-center hidden">
+    <div style="top: 0; max-width: 1280px;" class="full-width-percent d-flex f-row justify-between align-center">
+        <p style="padding: 0 15px;" class="header-opt-info"> +7 986 223‑71‑36 <br/>
+            Москва и Московская область</p>
+        <div style="padding: 0 15px;">
+            <p>logo</p>
+        </div>
+        <p class="header-opt-info">Пн-Вс 07:00-23:00</p>
+        <div style="padding: 0 5px;">
+            <button id="burger" class="burger-menu" onclick="toggleLinksContainer()">
+                <svg width="38" height="38" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 14H38" stroke="#33363F" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M10 24H38" stroke="#33363F" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M10 34H38" stroke="#33363F" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div id="burger-links-container" style="gap: 15px;" class="full-width-percent d-flex f-cr align-center justify-between hidden">
+        <ul id="burger-links-list-1" style="padding: 0 15px;row-gap: 10px; max-width: 1280px; box-sizing: border-box; flex-wrap: wrap; gap: 15px;" class="d-flex f-rc justify-between full-width-percent">
+            <li><a data-goto=".about-key" name="scroll-button" href="#" >О нас</a></li>
+            <li><a data-goto=".timber-key" name="scroll-button" href="#" >Дома из бруса</a></li>
+            <li><a data-goto=".frame-key" name="scroll-button" href="#" >Дома каркасные</a></li>
+            <li><a data-goto=".cottages-key" name="scroll-button" href="#" >Коттеджи</a></li>
+        </ul>
+        <ul id="burger-links-list-2" style="padding: 0 15px;row-gap: 10px; max-width: 1280px; box-sizing: border-box; flex-wrap: wrap; gap: 15px;" class="d-flex f-rc justify-between full-width-percent">
+            <li><a data-goto=".services-key" name="scroll-button" href="#" >Услуги</a></li>
+            <li><a data-goto=".foam-key" name="scroll-button" href="#" >Дома из пеноблоков</a></li>
+            <li><a data-goto=".baths-key" name="scroll-button" href="#" >Бани</a></li>
+            <li><a data-goto=".projects-key" name="scroll-button" href="#" >Наши работы</a></li>
+        </ul>
+    </div>
+</header>
+
+<script src="js/menu.js"></script>
+</body>
+</html>

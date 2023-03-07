@@ -1,0 +1,21 @@
+
+.header {
+    -webkit-box-shadow: 0 10px 50px 7px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0 10px 50px 7px rgba(34, 60, 80, 0.2);
+    box-shadow: 0 10px 50px 7px rgba(34, 60, 80, 0.2);
+}
+
+.burger-menu {
+    cursor: pointer;
+}
+
+#burger-links-container {
+    transition: all 0.2s ease-in-out;
+    height: 0;
+}
+
+@media (max-width:1280px) {
+    .header-opt-info {
+        display: none;
+    }
+}

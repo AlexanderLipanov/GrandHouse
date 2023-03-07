@@ -1,0 +1,133 @@
+
+body {
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
+}
+
+body::-webkit-scrollbar {
+    display: none !important;
+}
+
+/* FLEX */
+
+.d-flex {
+    display: flex;
+}
+
+.d-block {
+    display: block;
+}
+
+.f-row {
+    flex-direction: row;
+}
+
+.f-column {
+    flex-direction: column;
+}
+
+.f-all {
+    flex: 1 1;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.jutify-start {
+    justify-content: flex-start;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.f-rc {
+    flex-direction: row;
+}
+
+.f-cr {
+    flex-direction: column;
+}
+
+@media (max-width: 1280px) {
+    .f-rc {
+        flex-direction: column;
+    }
+    .f-cr {
+        flex-direction: row;
+    }
+}
+/* POSITION */
+
+.p-absolute {
+    position: absolute;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.p-static {
+    position: static;
+}
+
+.p-fixed {
+    position: fixed;
+}
+
+/* WIDTH / HEIGHT */
+
+.full-width-percent {
+    width: 100%;
+}
+
+.full-height-viewport {
+    height: 100vh;
+}
+
+.full-height-percent {
+    height: 100%;
+}
+
+/* SPACING */
+
+.pa-15 {
+    padding: 15px;
+}
+
+/* OTHER */
+
+.hidden {
+    overflow: hidden;
+}
+
+/* TYPOGRAPHY */
+
+.fs-40 {
+    font-size: 40px;
+}
+
+.t-transform-upper {
+    text-transform: uppercase;
+}
