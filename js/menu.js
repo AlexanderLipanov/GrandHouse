@@ -5,15 +5,18 @@ let burgerLinksContainer = document.getElementById("burger-links-container");
 function toggleLinksContainer() {
     let burgerLinksList1 = document.getElementById("burger-links-list-1");
     let burgerLinksList2 = document.getElementById("burger-links-list-2");
-
+    let menuLine = document.getElementById("menu-svg");
+    
     if(burgerLinksContainer.clientHeight === 0) {
         if(burgerLinksContainer.clientWidth > 1280) {
-        burgerLinksContainer.style.height = burgerLinksList1.clientHeight + burgerLinksList2.clientHeight + 60 + 15 + px;
+        burgerLinksContainer.style.height = burgerLinksList1.clientHeight + burgerLinksList2.clientHeight + 60 + 15 + 10 + px;
         } else {
-            burgerLinksContainer.style.height = burgerLinksList1.clientHeight + 60 + 15 + px;
+            burgerLinksContainer.style.height = burgerLinksList1.clientHeight + 60 + 15 + 10 + px;
         }
+        menuLine.style.display = "block";
     } else {
         burgerLinksContainer.style.height = 0 + px;
+        menuLine.style.display = "none";
     }
 }
 

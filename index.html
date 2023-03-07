@@ -2,11 +2,12 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <title>Гранд Хаус</title>
     <link rel="stylesheet" type="text/css" href="style/root.css"/>
 </head>
-<body>
-<header id="header" style="background-color: #ffff;z-index: 10" class="header p-fixed full-width-percent d-flex f-column align-center hidden">
+<body style="overflow-x:hidden;" class="full-width-percent">
+<header id="header" style="background-color: #ffff;z-index: 10;" class="header p-fixed full-width-percent d-flex f-column align-center hidden">
     <div style="top: 0; max-width: 1280px;" class="full-width-percent d-flex f-row justify-between align-center">
         <p style="padding: 0 15px;" class="header-opt-info"> +7 986 223‑71‑36 <br/>
             Москва и Московская область</p>
@@ -24,14 +25,19 @@
             </button>
         </div>
     </div>
+    <svg id="menu-svg" style="display: none;" height="1" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-line full-width-percent">
+        <line y1="0.5" x2="100%" y2="0.5" stroke="#d7d7d7"/>
+    </svg>
     <div id="burger-links-container" style="gap: 15px;" class="full-width-percent d-flex f-cr align-center justify-between hidden">
-        <ul id="burger-links-list-1" style="padding: 0 15px;row-gap: 10px; max-width: 1280px; box-sizing: border-box; flex-wrap: wrap; gap: 15px;" class="d-flex f-rc justify-between full-width-percent">
-            <li><a data-goto=".about-key" name="scroll-button" href="#" >О нас</a></li>
+        <ul id="burger-links-list-1" style="padding: 0 15px;row-gap: 10px; max-width: 1280px; flex-wrap: wrap; gap: 15px;" class="d-flex f-rc justify-between full-width-percent">
+            <li class="burger-opt-info"> Москва и Московская область</li>
+            <li style="width: auto;" ><a data-goto=".about-key" name="scroll-button" href="#">О нас</a></li>
             <li><a data-goto=".timber-key" name="scroll-button" href="#" >Дома из бруса</a></li>
             <li><a data-goto=".frame-key" name="scroll-button" href="#" >Дома каркасные</a></li>
             <li><a data-goto=".cottages-key" name="scroll-button" href="#" >Коттеджи</a></li>
         </ul>
-        <ul id="burger-links-list-2" style="padding: 0 15px;row-gap: 10px; max-width: 1280px; box-sizing: border-box; flex-wrap: wrap; gap: 15px;" class="d-flex f-rc justify-between full-width-percent">
+        <ul id="burger-links-list-2" style="padding: 0 15px;row-gap: 10px; max-width: 1280px; flex-wrap: wrap; gap: 15px;" class="d-flex f-rc justify-between full-width-percent">
+            <li class="burger-opt-info">Пн-Вс 07:00-23:00</li>
             <li><a data-goto=".services-key" name="scroll-button" href="#" >Услуги</a></li>
             <li><a data-goto=".foam-key" name="scroll-button" href="#" >Дома из пеноблоков</a></li>
             <li><a data-goto=".baths-key" name="scroll-button" href="#" >Бани</a></li>
@@ -39,6 +45,72 @@
         </ul>
     </div>
 </header>
+<div style="height: 460px;background-position: 50% 50%; background-image: url(https://259506.selcdn.ru/sites-static/site738867/22d2c764-56c8-4a59-ac8c-625f514f974e/22d2c764-56c8-4a59-ac8c-625f514f974e-4893881.jpeg); background-size: cover; background-repeat: no-repeat; border-radius: 0 0 0 70%;" class="full-width-percent hidden"></div>
+<div style="padding: 0 15px;" class="full-width-percent">
+    <div style="row-gap: 20px;" class="full-width-percent d-flex f-column align-start">
+        <h1>ГрандХаус</h1>
+        <p>Мы - профессиональная строительная компания с десятилетним опытом работы. Строим под ключ от фундамента до отделки. Даём гарантию. Выезд на объект для замера и составления сметы бесплатно! Будем рады с вами сотрудничать!</p>
+    </div>
+    <div style="margin-top: 100px;" class="full-width-percent d-flex f-column">
+        <h3>Строительство</h3>
+        <div style="flex-wrap: wrap; gap: 20px;" class="full-width-percent d-flex f-row">
+            <div style="row-gap: 15px; flex: 1 1;" class="d-flex f-column align-start">
+                <div style="width: 100%; height: 100%;" class="full-width-percent hidden">
+                    <img alt="a" src="pictures/png/houseTest.jpg" class="full-width-percent full-height-percent" />
+                </div>
+                <p style="text-wrap: normal;">Строительство домов и коттеджей</p>
+                <a style="padding: 20px 30px; border: 2px solid #0a0a0a; border-radius: 8px;">
+                    подробнее
+                </a>
+            </div>
+            <div style="row-gap: 15px; flex: 1 1;" class="d-flex f-column align-start">
+                <div style="width: 100%; height: 100%;" class="full-width-percent hidden">
+                    <img alt="a" src="pictures/png/houseTest.jpg" class="full-width-percent full-height-percent" />
+                </div>
+                <p style="text-wrap: normal;">Строительство домов и коттеджей</p>
+                <a style="padding: 20px 30px; border: 2px solid #0a0a0a; border-radius: 8px;">
+                    подробнее
+                </a>
+            </div>
+            <div style="row-gap: 15px; flex: 1 1;" class="d-flex f-column align-start">
+                <div style="width: 100%; height: 100%;" class="full-width-percent hidden">
+                    <img alt="a" src="pictures/png/houseTest.jpg" class="full-width-percent full-height-percent" />
+                </div>
+                <p style="text-wrap: normal;">Строительство домов и коттеджей</p>
+                <a style="padding: 20px 30px; border: 2px solid #0a0a0a; border-radius: 8px;">
+                    подробнее
+                </a>
+            </div>
+            <div style="row-gap: 15px; flex: 1 1;" class="d-flex f-column align-start">
+                <div style="width: 100%; height: 100%;" class="full-width-percent hidden">
+                    <img alt="a" src="pictures/png/houseTest.jpg" class="full-width-percent full-height-percent" />
+                </div>
+                <p style="text-wrap: normal;">Строительство домов и коттеджей</p>
+                <a style="padding: 20px 30px; border: 2px solid #0a0a0a; border-radius: 8px;">
+                    подробнее
+                </a>
+            </div>
+            <div style="row-gap: 15px; flex: 1 1;" class="d-flex f-column align-start">
+                <div style="width: 100%; height: 100%;" class="full-width-percent hidden">
+                    <img alt="a" src="pictures/png/houseTest.jpg" class="full-width-percent full-height-percent" />
+                </div>
+                <p style="text-wrap: normal;">Строительство домов и коттеджей</p>
+                <a style="padding: 20px 30px; border: 2px solid #0a0a0a; border-radius: 8px;">
+                    подробнее
+                </a>
+            </div>
+            <div style="row-gap: 15px; flex: 1 1;" class="d-flex f-column align-start">
+                <div style="width: 100%; height: 100%;" class="full-width-percent hidden">
+                    <img alt="a" src="pictures/png/houseTest.jpg" class="full-width-percent full-height-percent" />
+                </div>
+                <p style="text-wrap: normal;">Строительство домов и коттеджей</p>
+                <a style="padding: 20px 30px; border: 2px solid #0a0a0a; border-radius: 8px;">
+                    подробнее
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="js/menu.js"></script>
 </body>
