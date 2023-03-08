@@ -11,6 +11,16 @@
     display: none;
 }
 
+.advantages-card {
+    flex-direction: row;
+}
+
+.advantages-card-content {
+    width: 47%;
+    height: auto;
+}
+
+
 @media (max-width:1280px) {
     .services-card-size-break-point {
         width: 30%;
@@ -32,6 +42,16 @@
 @media (max-width:800px) {
     .services-card-size-break-point {
         width: 47%;
+    }
+    .advantages-card {
+        flex-direction: column;
+    }
+    .advantages-card-content {
+        width: 90%;
+        height: auto;
+    }
+    .our-advantages-reverse-break-point {
+        flex-direction: column-reverse !important; 
     }
 }
 
