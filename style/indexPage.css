@@ -1,19 +1,22 @@
 
 .services-card-size-break-point {
-    flex: 0 1 24%;
-    /*padding: 15px;*/
+    width: 23%;
 }
 
 @media (max-width:1280px) {
     .services-card-size-break-point {
-        flex: 1 1 35%;
-        /*padding: 15px;*/
+        width: 30%;
     }
 }
 
-@media (max-width:700px) {
+@media (max-width:800px) {
     .services-card-size-break-point {
-        flex: 1 1 auto;
-        /*padding: 15px;*/
+        width: 47%;
+    }
+}
+
+@media (max-width:580px) {
+    .services-card-size-break-point {
+        width: 100%;
     }
 }
