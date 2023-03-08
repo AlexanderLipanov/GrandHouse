@@ -7,6 +7,10 @@
     height: 460px;
 }
 
+.schema-block-mobile {
+    display: none;
+}
+
 @media (max-width:1280px) {
     .services-card-size-break-point {
         width: 30%;
@@ -34,5 +38,11 @@
 @media (max-width:580px) {
     .services-card-size-break-point {
         width: 100%;
+    }
+    .schema-block-pc {
+        display: none;
+    }
+    .schema-block-mobile {
+        display: flex;
     }
 }
