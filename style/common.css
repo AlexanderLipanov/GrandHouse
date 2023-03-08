@@ -70,6 +70,16 @@ body::-webkit-scrollbar {
     flex-direction: column;
 }
 
+.align-se {
+    align-items: start;
+}
+
+@media (min-width:1280px) {
+    .align-se {
+        align-items: end;
+    }
+}
+
 @media (max-width: 1280px) {
     .f-rc {
         flex-direction: column;

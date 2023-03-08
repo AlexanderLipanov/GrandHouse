@@ -3,9 +3,25 @@
     width: 23%;
 }
 
+.home-image {
+    height: 460px;
+}
+
 @media (max-width:1280px) {
     .services-card-size-break-point {
         width: 30%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .home-wrapper {
+        flex-direction: row-reverse;
+    }
+    .home-title {
+        max-width: 320px;
+    }
+    .home-image {
+        height: 100vh;
     }
 }
 
