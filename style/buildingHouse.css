@@ -1,0 +1,15 @@
+.building-house-advantages-card {
+    width: 31%;
+}
+
+@media (max-width: 1045px) {
+    .building-house-advantages-card {
+        width: 47%;
+    }
+}
+
+@media (max-width: 763px) {
+    .building-house-advantages-card {
+        width: 100%;
+    }
+}
