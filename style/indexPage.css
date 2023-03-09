@@ -43,9 +43,16 @@
     }
 }
 
+.form-container {
+    flex-direction: row;
+}
+
 @media (max-width: 929px) {
     .object-photo-card {
         width: 31%;
+    }
+    .form-container {
+        flex-direction: column;
     }
 }
 
