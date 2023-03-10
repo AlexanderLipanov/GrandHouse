@@ -1,0 +1,9 @@
+.flex-home-fence {
+    flex-direction: row !important;
+}
+
+@media (max-width: 1280px) {
+    .flex-home-fence {
+        flex-direction: column-reverse !important;
+    }
+}
