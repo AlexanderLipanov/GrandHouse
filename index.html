@@ -6,20 +6,22 @@
     <base target="_blank">
     <title>Гранд Хаус</title>
     <link rel="stylesheet" type="text/css" href="style/root.css"/>
-    <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
-<body style="overflow-x:hidden;margin-bottom: 50px; " class="full-width-percent d-flex f-column align-center">
+<body style="overflow-x:hidden;margin-bottom: 50px;" class="full-width-percent d-flex f-column align-center">
 <header id="header" style="background-color: #ffff;z-index: 15;" class="header p-fixed full-width-percent d-flex f-column align-center hidden">
     <div style="top: 0; max-width: 1280px;" class="full-width-percent d-flex f-row justify-between align-center">
-        <p style="padding: 0 15px;" class="header-opt-info"> +7 986 223‑71‑36 <br/>
+        <p style="padding: 0 15px;" class="header-opt-info fs-16 lh-24 fw-400"> +7 986 223‑71‑36 <br/>
             Москва и Московская область</p>
         <div style="padding: 0 15px;">
-            <p>logo</p>
+            <div style="width: 115px; height: 65px;" class="hidden">
+                <img alt="logo" src="pictures/png/photo_2023-03-11_15-36-08.jpg" class="full-width-percent full-height-percent" />
+            </div>
         </div>
-        <p class="header-opt-info">Пн-Вс 07:00-23:00</p>
+        <p class="header-opt-info fs-16 lh-24 fw-400">Пн-Вс 07:00-23:00</p>
         <div style="padding: 0 5px;">
             <button id="burger" class="burger-menu" onclick="toggleLinksContainer()">
                 <svg width="38" height="38" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -35,27 +37,27 @@
     </svg>
     <div id="burger-links-container" style="gap: 15px;" class="full-width-percent d-flex f-cr align-center justify-between hidden">
         <ul id="burger-links-list-1" style="padding: 0 15px;row-gap: 10px; max-width: 1280px; flex-wrap: wrap; gap: 15px;" class="d-flex f-rc justify-between full-width-percent">
-            <li class="burger-opt-info"> Москва и Московская область</li>
-            <li><a data-goto=".about-key" name="scroll-button" href="#">О нас</a></li>
-            <li><a data-goto=".timber-key" name="scroll-button" href="#" >Дома из бруса</a></li>
-            <li><a data-goto=".frame-key" name="scroll-button" href="#" >Дома каркасные</a></li>
-            <li><a data-goto=".cottages-key" name="scroll-button" href="#" >Коттеджи</a></li>
+            <li class="burger-opt-info fs-16 lh-24 fw-400"> Москва и Московская область</li>
+            <li><a data-goto=".about-key" name="scroll-button" href="#" class="fs-24 lh-32 fw-400">О нас</a></li>
+            <li><a data-goto=".timber-key" name="scroll-button" href="#" class="fs-24 lh-32 fw-400"class="fs-24 lh-32 fw-400">Дома из бруса</a></li>
+            <li><a data-goto=".frame-key" name="scroll-button" href="#" class="fs-24 lh-32 fw-400"class="fs-24 lh-32 fw-400">Дома каркасные</a></li>
+            <li><a data-goto=".cottages-key" name="scroll-button" href="#" class="fs-24 lh-32 fw-400"class="fs-24 lh-32 fw-400">Коттеджи</a></li>
         </ul>
         <ul id="burger-links-list-2" style="padding: 0 15px;row-gap: 10px; max-width: 1280px; flex-wrap: wrap; gap: 15px;" class="d-flex f-rc justify-between full-width-percent">
-            <li class="burger-opt-info">Пн-Вс 07:00-23:00</li>
-            <li><a data-goto=".services-key" name="scroll-button" href="#" >Услуги</a></li>
-            <li><a data-goto=".foam-key" name="scroll-button" href="#" >Дома из пеноблоков</a></li>
-            <li><a data-goto=".baths-key" name="scroll-button" href="#" >Бани</a></li>
-            <li><a data-goto=".projects-key" name="scroll-button" href="#" >Наши работы</a></li>
+            <li class="burger-opt-info fs-16 lh-24 fw-400">Пн-Вс 07:00-23:00</li>
+            <li><a data-goto=".services-key" name="scroll-button" href="#" class="fs-24 lh-32 fw-400">Услуги</a></li>
+            <li><a data-goto=".foam-key" name="scroll-button" href="#" class="fs-24 lh-32 fw-400">Дома из пеноблоков</a></li>
+            <li><a data-goto=".baths-key" name="scroll-button" href="#" class="fs-24 lh-32 fw-400">Бани</a></li>
+            <li><a data-goto=".projects-key" name="scroll-button" href="#" class="fs-24 lh-32 fw-400">Наши работы</a></li>
         </ul>
     </div>
 </header>
 <div style="gap: 30px;" class="full-width-percent d-flex f-rc align-center home-wrapper hidden">
-<div style="background-position: 50% 50%; background-image: url(pictures/png/buildingHouse/7ecb005f7863f263bd50de0adce62920.jpg); background-size: cover; background-repeat: no-repeat; border-radius: 0 0 0 50%;" class="full-width-percent home-image"></div>
+<div style="background-position: 50% 50%; background-image: url(pictures/png/generalHomePage.jpg); background-size: cover; background-repeat: no-repeat; border-radius: 0 0 0 50%;" class="full-width-percent home-image"></div>
     <div style="row-gap: 20px; padding: 0 15px;" class="full-width-percent d-flex f-column align-start align-se">
         <div>
-            <h1>ГрандХаус</h1>
-            <p class="home-title">Мы - профессиональная строительная компания с десятилетним опытом работы. Строим под ключ от фундамента до отделки. Даём гарантию. Выезд на объект для замера и составления сметы бесплатно! Будем рады с вами сотрудничать!</p>
+            <h1 class="fs-72 lh-80 fw-700">ГрандХаус</h1>
+            <p class="home-title fs-20 lh-28 fw-400 paragraph-color">Мы - профессиональная строительная компания с десятилетним опытом работы. Строим под ключ от фундамента до отделки. Даём гарантию. Выезд на объект для замера и составления сметы бесплатно! Будем рады с вами сотрудничать!</p>
         </div>
     </div>
 </div>
@@ -63,14 +65,14 @@
     
     <!-- SERVICES -->
     <div style="margin-top: 100px; padding: 0 15px;" class="full-width-percent d-flex f-column services-key">
-        <h3>Строительство</h3>
+        <h2 class="fs-56 lh-64 fw-700">Строительство</h2>
         <div style="flex-wrap: wrap; gap: 24px;" class="d-flex f-row">
             <div style="row-gap: 15px;" class="full-width-percent full-height-percent d-flex f-column align-start services-card-size-break-point">
                 <div class="full-width-percent full-height-percent hidden">
                     <img alt="a" src="pictures/png/building/karkasnik.jpg" class="full-width-percent full-height-percent" />
                 </div>
                 <p style="text-wrap: normal;">Строительство домов и коттеджей</p>
-                <a style="padding: 20px 30px; border: 2px solid #0a0a0a; border-radius: 8px;" href="buildingHouse.html">
+                <a style="padding: 0 15px; border: 2px solid #0a0a0a; border-radius: 8px;" href="buildingHouse.html" class="fs-16 lh-44 fw-400">
                     подробнее
                 </a>
             </div>
@@ -79,7 +81,7 @@
                     <img alt="a" src="pictures/png/building/file_d972130f1e48ee3c5802c3110aa638ed.jpg" class="full-width-percent full-height-percent" />
                 </div>
                 <p style="text-wrap: normal;">Строительство гаражей </p>
-                <a style="padding: 20px 30px; border: 2px solid #0a0a0a; border-radius: 8px;" href="buildingGarage.html">
+                <a style="padding: 0 15px; border: 2px solid #0a0a0a; border-radius: 8px;" href="buildingGarage.html" class="fs-16 lh-44 fw-400">
                     подробнее
                 </a>
             </div>
@@ -88,7 +90,7 @@
                     <img alt="a" src="pictures/png/building/price_col_1_0.jpg" class="full-width-percent full-height-percent" />
                 </div>
                 <p style="text-wrap: normal;">Строительство заборов и ограждений </p>
-                <a style="padding: 20px 30px; border: 2px solid #0a0a0a; border-radius: 8px;" href="buildingFence.html">
+                <a style="padding: 0 15px; border: 2px solid #0a0a0a; border-radius: 8px;" href="buildingFence.html" class="fs-16 lh-44 fw-400">
                     подробнее
                 </a>
             </div>
@@ -97,7 +99,7 @@
                     <img alt="a" src="pictures/png/building/roof.jpg" class="full-width-percent full-height-percent" />
                 </div>
                 <p style="text-wrap: normal;">Кровельные работы </p>
-                <a style="padding: 20px 30px; border: 2px solid #0a0a0a; border-radius: 8px;" href="buidlingRoof.html">
+                <a style="padding: 0 15px; border: 2px solid #0a0a0a; border-radius: 8px;" href="buidlingRoof.html" class="fs-16 lh-44 fw-400">
                     подробнее
                 </a>
             </div>
@@ -106,7 +108,7 @@
                     <img alt="a" src="pictures/png/building/vynil-3_a24493cbcd23f345792e627e4d495440_500x334.jpg" class="full-width-percent full-height-percent" />
                 </div>
                 <p style="text-wrap: normal;">Фасадные работы</p>
-                <a style="padding: 20px 30px; border: 2px solid #0a0a0a; border-radius: 8px;" href="buildingFacade.html">
+                <a style="padding: 0 15px; border: 2px solid #0a0a0a; border-radius: 8px;" href="buildingFacade.html" class="fs-16 lh-44 fw-400">
                     подробнее
                 </a>
             </div>
@@ -115,7 +117,7 @@
                     <img alt="a" src="pictures/png/building/photo_5467619807806472462_x.jpg" class="full-width-percent full-height-percent" />
                 </div>
                 <p style="text-wrap: normal;">Кладочные работы</p>
-                <a style="padding: 20px 30px; border: 2px solid #0a0a0a; border-radius: 8px;" href="buildingMasonry.html">
+                <a style="padding: 0 15px; border: 2px solid #0a0a0a; border-radius: 8px;" href="buildingMasonry.html" class="fs-16 lh-44 fw-400">
                     подробнее
                 </a>
             </div>
@@ -124,7 +126,7 @@
                     <img alt="a" src="pictures/png/building/founfation.jpg" class="full-width-percent full-height-percent" />
                 </div>
                 <p style="text-wrap: normal;">Строительство фундамента</p>
-                <a style="padding: 20px 30px; border: 2px solid #0a0a0a; border-radius: 8px;" href="buildingFoundation.html">
+                <a style="padding: 0 15px; border: 2px solid #0a0a0a; border-radius: 8px;" href="buildingFoundation.html" class="fs-16 lh-44 fw-400">
                     подробнее
                 </a>
             </div>
@@ -133,7 +135,7 @@
 
     <!-- TIMBERS -->
     <div style="margin-top: 70px;" class="full-width-percent d-flex f-column align-start timber-key">
-        <h3>Дома из бруса</h3>
+        <h3 class="fs-56 lh-64 fw-700">Дома из бруса</h3>
         <div class="full-width-percent hidden">
             <div class="swiper-timber swiper-common">
                 <!-- Additional required wrapper -->
@@ -145,11 +147,11 @@
                                 <img alt="a" src="pictures/png/timber/5f93ecf8b2ae444857af069cf9abf1a5.jpg" class="full-width-percent full-height-percent" />
                             </div>
                             <div style="gap: 15px; padding: 15px;" class="d-flex f-column align-start">
-                                <p>площадь</p>
-                                <p>габариты</p>
-                                <p>этажность</p>
-                                <p>количество комнат</p>
-                                <p style="margin-top: 30px;">цена проекта</p>
+                                <p class="fs-16 lh-24 fw-400">площадь</p>
+                                <p class="fs-16 lh-24 fw-400">габариты</p>
+                                <p class="fs-16 lh-24 fw-400">этажность</p>
+                                <p class="fs-16 lh-24 fw-400">количество комнат</p>
+                                <p style="margin-top: 30px;" class="fs-16 lh-24 fw-400">цена проекта</p>
                             </div>
                         </div>
                     </div>
@@ -159,11 +161,11 @@
                                 <img alt="a" src="pictures/png/timber/timber6.jpg" class="full-width-percent full-height-percent" />
                             </div>
                             <div style="gap: 15px; padding: 15px;" class="d-flex f-column align-start">
-                                <p>площадь</p>
-                                <p>габариты</p>
-                                <p>этажность</p>
-                                <p>количество комнат</p>
-                                <p style="margin-top: 30px;">цена проекта</p>
+                                <p class="fs-16 lh-24 fw-400">площадь</p>
+                                <p class="fs-16 lh-24 fw-400">габариты</p>
+                                <p class="fs-16 lh-24 fw-400">этажность</p>
+                                <p class="fs-16 lh-24 fw-400">количество комнат</p>
+                                <p style="margin-top: 30px;" class="fs-16 lh-24 fw-400">цена проекта</p>
                             </div>
                         </div>
                     </div>
@@ -173,11 +175,11 @@
                                 <img alt="a" src="pictures/png/timber/Z30_01.jpg" class="full-width-percent full-height-percent" />
                             </div>
                             <div style="gap: 15px; padding: 15px;" class="d-flex f-column align-start">
-                                <p>площадь</p>
-                                <p>габариты</p>
-                                <p>этажность</p>
-                                <p>количество комнат</p>
-                                <p style="margin-top: 30px;">цена проекта</p>
+                                <p class="fs-16 lh-24 fw-400">площадь</p>
+                                <p class="fs-16 lh-24 fw-400">габариты</p>
+                                <p class="fs-16 lh-24 fw-400">этажность</p>
+                                <p class="fs-16 lh-24 fw-400">количество комнат</p>
+                                <p style="margin-top: 30px;" class="fs-16 lh-24 fw-400">цена проекта</p>
                             </div>
                         </div>
                     </div>
@@ -187,11 +189,11 @@
                                 <img alt="a" src="pictures/png/timber/file_3b58efbf0256cd7e92d0c84629e7e782.jpg" class="full-width-percent full-height-percent" />
                             </div>
                             <div style="gap: 15px; padding: 15px;" class="d-flex f-column align-start">
-                                <p>площадь</p>
-                                <p>габариты</p>
-                                <p>этажность</p>
-                                <p>количество комнат</p>
-                                <p style="margin-top: 30px;">цена проекта</p>
+                                <p class="fs-16 lh-24 fw-400">площадь</p>
+                                <p class="fs-16 lh-24 fw-400">габариты</p>
+                                <p class="fs-16 lh-24 fw-400">этажность</p>
+                                <p class="fs-16 lh-24 fw-400">количество комнат</p>
+                                <p style="margin-top: 30px;" class="fs-16 lh-24 fw-400">цена проекта</p>
                             </div>
                         </div>
                     </div>
@@ -201,11 +203,11 @@
                                 <img alt="a" src="pictures/png/timber/file_fdd7c0a21b3dca2bee5a5640f834c040.jpg" class="full-width-percent full-height-percent" />
                             </div>
                             <div style="gap: 15px; padding: 15px;" class="d-flex f-column align-start">
-                                <p>площадь</p>
-                                <p>габариты</p>
-                                <p>этажность</p>
-                                <p>количество комнат</p>
-                                <p style="margin-top: 30px;">цена проекта</p>
+                                <p class="fs-16 lh-24 fw-400">площадь</p>
+                                <p class="fs-16 lh-24 fw-400">габариты</p>
+                                <p class="fs-16 lh-24 fw-400">этажность</p>
+                                <p class="fs-16 lh-24 fw-400">количество комнат</p>
+                                <p style="margin-top: 30px;" class="fs-16 lh-24 fw-400">цена проекта</p>
                             </div>
                         </div>
                     </div>
@@ -215,11 +217,11 @@
                                 <img alt="a" src="pictures/png/timber/file_decce0e7fe82290ee6cf4456e019cc3a.jpg" class="full-width-percent full-height-percent" />
                             </div>
                             <div style="gap: 15px; padding: 15px;" class="d-flex f-column align-start">
-                                <p>площадь</p>
-                                <p>габариты</p>
-                                <p>этажность</p>
-                                <p>количество комнат</p>
-                                <p style="margin-top: 30px;">цена проекта</p>
+                                <p class="fs-16 lh-24 fw-400">площадь</p>
+                                <p class="fs-16 lh-24 fw-400">габариты</p>
+                                <p class="fs-16 lh-24 fw-400">этажность</p>
+                                <p class="fs-16 lh-24 fw-400">количество комнат</p>
+                                <p style="margin-top: 30px;" class="fs-16 lh-24 fw-400">цена проекта</p>
                             </div>
                         </div>
                     </div>
@@ -235,8 +237,8 @@
     </div>
     
     <!-- FOAMS -->
-    <div style="margin-top: 70px;" class="full-width-percent d-flex f-column align-start foam-key">
-        <h3>Дома из пеноблоков</h3>
+    <div style="margin-top: 70px;" class="full-width-percent d-flex f-column align-start foam-key" class="fs-16 lh-24 fw-400">
+        <h3 class="fs-56 lh-64 fw-700">Дома из пеноблоков</h3>
         <div class="full-width-percent hidden">
             <div class="swiper-timber swiper-common">
                 <!-- Additional required wrapper -->
@@ -248,11 +250,11 @@
                                 <img alt="a" src="pictures/png/foam/file_3f15bd97614e2d168f3faeaaa2b903d7.jpg" class="full-width-percent full-height-percent" />
                             </div>
                             <div style="gap: 15px; padding: 15px;" class="d-flex f-column align-start">
-                                <p>площадь</p>
-                                <p>габариты</p>
-                                <p>этажность</p>
-                                <p>количество комнат</p>
-                                <p style="margin-top: 30px;">цена проекта</p>
+                                <p class="fs-16 lh-24 fw-400">площадь</p>
+                                <p class="fs-16 lh-24 fw-400">габариты</p>
+                                <p class="fs-16 lh-24 fw-400">этажность</p>
+                                <p class="fs-16 lh-24 fw-400">количество комнат</p>
+                                <p style="margin-top: 30px;" class="fs-16 lh-24 fw-400">цена проекта</p>
                             </div>
                         </div>
                     </div>
@@ -262,11 +264,11 @@
                                 <img alt="a" src="pictures/png/foam/file_23d7f539156bb80c859fe666ca4e6d6d.jpg" class="full-width-percent full-height-percent" />
                             </div>
                             <div style="gap: 15px; padding: 15px;" class="d-flex f-column align-start">
-                                <p>площадь</p>
-                                <p>габариты</p>
-                                <p>этажность</p>
-                                <p>количество комнат</p>
-                                <p style="margin-top: 30px;">цена проекта</p>
+                                <p class="fs-16 lh-24 fw-400">площадь</p>
+                                <p class="fs-16 lh-24 fw-400">габариты</p>
+                                <p class="fs-16 lh-24 fw-400">этажность</p>
+                                <p class="fs-16 lh-24 fw-400">количество комнат</p>
+                                <p style="margin-top: 30px;" class="fs-16 lh-24 fw-400">цена проекта</p>
                             </div>
                         </div>
                     </div>
@@ -276,11 +278,11 @@
                                 <img alt="a" src="pictures/png/foam/file_a2457f74cb1236390ce7a0b14ef511e1.jpg" class="full-width-percent full-height-percent" />
                             </div>
                             <div style="gap: 15px; padding: 15px;" class="d-flex f-column align-start">
-                                <p>площадь</p>
-                                <p>габариты</p>
-                                <p>этажность</p>
-                                <p>количество комнат</p>
-                                <p style="margin-top: 30px;">цена проекта</p>
+                                <p class="fs-16 lh-24 fw-400">площадь</p>
+                                <p class="fs-16 lh-24 fw-400">габариты</p>
+                                <p class="fs-16 lh-24 fw-400">этажность</p>
+                                <p class="fs-16 lh-24 fw-400">количество комнат</p>
+                                <p style="margin-top: 30px;" class="fs-16 lh-24 fw-400">цена проекта</p>
                             </div>
                         </div>
                     </div>
@@ -290,11 +292,11 @@
                                 <img alt="a" src="pictures/png/foam/file_f3faab26deeca170b42b1be58b75f792.jpg" class="full-width-percent full-height-percent" />
                             </div>
                             <div style="gap: 15px; padding: 15px;" class="d-flex f-column align-start">
-                                <p>площадь</p>
-                                <p>габариты</p>
-                                <p>этажность</p>
-                                <p>количество комнат</p>
-                                <p style="margin-top: 30px;">цена проекта</p>
+                                <p class="fs-16 lh-24 fw-400">площадь</p>
+                                <p class="fs-16 lh-24 fw-400">габариты</p>
+                                <p class="fs-16 lh-24 fw-400">этажность</p>
+                                <p class="fs-16 lh-24 fw-400">количество комнат</p>
+                                <p style="margin-top: 30px;" class="fs-16 lh-24 fw-400">цена проекта</p>
                             </div>
                         </div>
                     </div>
@@ -304,11 +306,11 @@
                                 <img alt="a" src="pictures/png/foam/file_f1f234c9a4ef7723a62887ebe54cd666.jpg" class="full-width-percent full-height-percent" />
                             </div>
                             <div style="gap: 15px; padding: 15px;" class="d-flex f-column align-start">
-                                <p>площадь</p>
-                                <p>габариты</p>
-                                <p>этажность</p>
-                                <p>количество комнат</p>
-                                <p style="margin-top: 30px;">цена проекта</p>
+                                <p class="fs-16 lh-24 fw-400">площадь</p>
+                                <p class="fs-16 lh-24 fw-400">габариты</p>
+                                <p class="fs-16 lh-24 fw-400">этажность</p>
+                                <p class="fs-16 lh-24 fw-400">количество комнат</p>
+                                <p style="margin-top: 30px;" class="fs-16 lh-24 fw-400">цена проекта</p>
                             </div>
                         </div>
                     </div>
@@ -318,11 +320,11 @@
                                 <img alt="a" src="pictures/png/foam/file_699e70a9a9e40915c4876f595f237f0a.jpg" class="full-width-percent full-height-percent" />
                             </div>
                             <div style="gap: 15px; padding: 15px;" class="d-flex f-column align-start">
-                                <p>площадь</p>
-                                <p>габариты</p>
-                                <p>этажность</p>
-                                <p>количество комнат</p>
-                                <p style="margin-top: 30px;">цена проекта</p>
+                                <p class="fs-16 lh-24 fw-400">площадь</p>
+                                <p class="fs-16 lh-24 fw-400">габариты</p>
+                                <p class="fs-16 lh-24 fw-400">этажность</p>
+                                <p class="fs-16 lh-24 fw-400">количество комнат</p>
+                                <p style="margin-top: 30px;" class="fs-16 lh-24 fw-400">цена проекта</p>
                             </div>
                         </div>
                     </div>
@@ -339,7 +341,7 @@
     
     <!-- FRAMES -->
     <div style="margin-top: 70px;" class="full-width-percent d-flex f-column align-start frame-key">
-        <h3>Дома каркасные</h3>
+        <h3 class="fs-56 lh-64 fw-700">Дома каркасные</h3>
         <div class="full-width-percent hidden">
             <div class="swiper-frame swiper-common">
                 <!-- Additional required wrapper -->
@@ -351,11 +353,11 @@
                                 <img alt="a" src="pictures/png/frame/file_5be5c5da619eef726770be228853d621.jpg" class="full-width-percent full-height-percent" />
                             </div>
                             <div style="gap: 15px; padding: 15px;" class="d-flex f-column align-start">
-                                <p>площадь</p>
-                                <p>габариты</p>
-                                <p>этажность</p>
-                                <p>количество комнат</p>
-                                <p style="margin-top: 30px;">цена проекта</p>
+                                <p class="fs-16 lh-24 fw-400">площадь</p>
+                                <p class="fs-16 lh-24 fw-400">габариты</p>
+                                <p class="fs-16 lh-24 fw-400">этажность</p>
+                                <p class="fs-16 lh-24 fw-400">количество комнат</p>
+                                <p style="margin-top: 30px;" class="fs-16 lh-24 fw-400">цена проекта</p>
                             </div>
                         </div>
                     </div>
@@ -365,11 +367,11 @@
                                 <img alt="a" src="pictures/png/frame/48d983eb46d09bd0a110a52fc65ed25e.jpg" class="full-width-percent full-height-percent" />
                             </div>
                             <div style="gap: 15px; padding: 15px;" class="d-flex f-column align-start">
-                                <p>площадь</p>
-                                <p>габариты</p>
-                                <p>этажность</p>
-                                <p>количество комнат</p>
-                                <p style="margin-top: 30px;">цена проекта</p>
+                                <p class="fs-16 lh-24 fw-400">площадь</p>
+                                <p class="fs-16 lh-24 fw-400">габариты</p>
+                                <p class="fs-16 lh-24 fw-400">этажность</p>
+                                <p class="fs-16 lh-24 fw-400">количество комнат</p>
+                                <p style="margin-top: 30px;" class="fs-16 lh-24 fw-400">цена проекта</p>
                             </div>
                         </div>
                     </div>
@@ -379,11 +381,11 @@
                                 <img alt="a" src="pictures/png/frame/e5f39f95acc58575e30cd9579ad418d1.jpg" class="full-width-percent full-height-percent" />
                             </div>
                             <div style="gap: 15px; padding: 15px;" class="d-flex f-column align-start">
-                                <p>площадь</p>
-                                <p>габариты</p>
-                                <p>этажность</p>
-                                <p>количество комнат</p>
-                                <p style="margin-top: 30px;">цена проекта</p>
+                                <p class="fs-16 lh-24 fw-400" class="fs-16 lh-24 fw-400">площадь</p>
+                                <p class="fs-16 lh-24 fw-400" class="fs-16 lh-24 fw-400">габариты</p>
+                                <p class="fs-16 lh-24 fw-400" class="fs-16 lh-24 fw-400">этажность</p>
+                                <p class="fs-16 lh-24 fw-400" class="fs-16 lh-24 fw-400">количество комнат</p>
+                                <p style="margin-top: 30px;" class="fs-16 lh-24 fw-400" class="fs-16 lh-24 fw-400">цена проекта</p>
                             </div>
                         </div>
                     </div>
@@ -393,11 +395,11 @@
                                 <img alt="a" src="pictures/png/frame/1a2b2dcae7fced19f5dbf833e3b4945d.jpg" class="full-width-percent full-height-percent" />
                             </div>
                             <div style="gap: 15px; padding: 15px;" class="d-flex f-column align-start">
-                                <p>площадь</p>
-                                <p>габариты</p>
-                                <p>этажность</p>
-                                <p>количество комнат</p>
-                                <p style="margin-top: 30px;">цена проекта</p>
+                                <p class="fs-16 lh-24 fw-400">площадь</p>
+                                <p class="fs-16 lh-24 fw-400">габариты</p>
+                                <p class="fs-16 lh-24 fw-400">этажность</p>
+                                <p class="fs-16 lh-24 fw-400">количество комнат</p>
+                                <p style="margin-top: 30px;" class="fs-16 lh-24 fw-400">цена проекта</p>
                             </div>
                         </div>
                     </div>
@@ -407,11 +409,11 @@
                                 <img alt="a" src="pictures/png/frame/48d983eb46d09bd0a110a52fc65ed25e.jpg" class="full-width-percent full-height-percent" />
                             </div>
                             <div style="gap: 15px; padding: 15px;" class="d-flex f-column align-start">
-                                <p>площадь</p>
-                                <p>габариты</p>
-                                <p>этажность</p>
-                                <p>количество комнат</p>
-                                <p style="margin-top: 30px;">цена проекта</p>
+                                <p class="fs-16 lh-24 fw-400">площадь</p>
+                                <p class="fs-16 lh-24 fw-400">габариты</p>
+                                <p class="fs-16 lh-24 fw-400">этажность</p>
+                                <p class="fs-16 lh-24 fw-400">количество комнат</p>
+                                <p style="margin-top: 30px;" class="fs-16 lh-24 fw-400">цена проекта</p>
                             </div>
                         </div>
                     </div>
@@ -421,11 +423,11 @@
                                 <img alt="a" src="pictures/png/frame/fea7c9bec040357f150c8bbc366118d9.jpg" class="full-width-percent full-height-percent" />
                             </div>
                             <div style="gap: 15px; padding: 15px;" class="d-flex f-column align-start">
-                                <p>площадь</p>
-                                <p>габариты</p>
-                                <p>этажность</p>
-                                <p>количество комнат</p>
-                                <p style="margin-top: 30px;">цена проекта</p>
+                                <p class="fs-16 lh-24 fw-400">площадь</p>
+                                <p class="fs-16 lh-24 fw-400">габариты</p>
+                                <p class="fs-16 lh-24 fw-400">этажность</p>
+                                <p class="fs-16 lh-24 fw-400">количество комнат</p>
+                                <p style="margin-top: 30px;" class="fs-16 lh-24 fw-400">цена проекта</p>
                             </div>
                         </div>
                     </div>
@@ -442,7 +444,7 @@
     
     <!-- COTTAGES -->
     <div style="margin-top: 70px;" class="full-width-percent d-flex f-column align-start cottages-key">
-        <h3>Коттеджи</h3>
+        <h3 class="fs-56 lh-64 fw-700">Коттеджи</h3>
         <div class="full-width-percent hidden">
             <div class="swiper-cottage swiper-common">
                 <!-- Additional required wrapper -->
@@ -454,11 +456,11 @@
                                 <img alt="a" src="pictures/png/cottage/file_df462754c6f392c766b6560e12b1421e.jpg" class="full-width-percent full-height-percent" />
                             </div>
                             <div style="gap: 15px; padding: 15px;" class="d-flex f-column align-start">
-                                <p>площадь</p>
-                                <p>габариты</p>
-                                <p>этажность</p>
-                                <p>количество комнат</p>
-                                <p style="margin-top: 30px;">цена проекта</p>
+                                <p class="fs-16 lh-24 fw-400">площадь</p>
+                                <p class="fs-16 lh-24 fw-400">габариты</p>
+                                <p class="fs-16 lh-24 fw-400">этажность</p>
+                                <p class="fs-16 lh-24 fw-400">количество комнат</p>
+                                <p style="margin-top: 30px;" class="fs-16 lh-24 fw-400">цена проекта</p>
                             </div>
                         </div>
                     </div>
@@ -468,11 +470,11 @@
                                 <img alt="a" src="pictures/png/cottage/file_1894ea15d2279143dbe4dcffdb4068bc.jpg" class="full-width-percent full-height-percent" />
                             </div>
                             <div style="gap: 15px; padding: 15px;" class="d-flex f-column align-start">
-                                <p>площадь</p>
-                                <p>габариты</p>
-                                <p>этажность</p>
-                                <p>количество комнат</p>
-                                <p style="margin-top: 30px;">цена проекта</p>
+                                <p class="fs-16 lh-24 fw-400">площадь</p>
+                                <p class="fs-16 lh-24 fw-400">габариты</p>
+                                <p class="fs-16 lh-24 fw-400">этажность</p>
+                                <p class="fs-16 lh-24 fw-400">количество комнат</p>
+                                <p style="margin-top: 30px;" class="fs-16 lh-24 fw-400">цена проекта</p>
                             </div>
                         </div>
                     </div>
@@ -482,11 +484,11 @@
                                 <img alt="a" src="pictures/png/cottage/file_bc592717bbc0a13b8b75c93eaec284c7.jpg" class="full-width-percent full-height-percent" />
                             </div>
                             <div style="gap: 15px; padding: 15px;" class="d-flex f-column align-start">
-                                <p>площадь</p>
-                                <p>габариты</p>
-                                <p>этажность</p>
-                                <p>количество комнат</p>
-                                <p style="margin-top: 30px;">цена проекта</p>
+                                <p class="fs-16 lh-24 fw-400">площадь</p>
+                                <p class="fs-16 lh-24 fw-400">габариты</p>
+                                <p class="fs-16 lh-24 fw-400">этажность</p>
+                                <p class="fs-16 lh-24 fw-400">количество комнат</p>
+                                <p style="margin-top: 30px;" class="fs-16 lh-24 fw-400">цена проекта</p>
                             </div>
                         </div>
                     </div>
@@ -496,11 +498,11 @@
                                 <img alt="a" src="pictures/png/cottage/file_199e7b54861dd5658939154b5041d6c4.jpg" class="full-width-percent full-height-percent" />
                             </div>
                             <div style="gap: 15px; padding: 15px;" class="d-flex f-column align-start">
-                                <p>площадь</p>
-                                <p>габариты</p>
-                                <p>этажность</p>
-                                <p>количество комнат</p>
-                                <p style="margin-top: 30px;">цена проекта</p>
+                                <p class="fs-16 lh-24 fw-400">площадь</p>
+                                <p class="fs-16 lh-24 fw-400">габариты</p>
+                                <p class="fs-16 lh-24 fw-400">этажность</p>
+                                <p class="fs-16 lh-24 fw-400">количество комнат</p>
+                                <p style="margin-top: 30px;" class="fs-16 lh-24 fw-400">цена проекта</p>
                             </div>
                         </div>
                     </div>
@@ -510,11 +512,11 @@
                                 <img alt="a" src="pictures/png/cottage/file_e73c3380e0b56e9761aeec64429b01f2.jpg" class="full-width-percent full-height-percent" />
                             </div>
                             <div style="gap: 15px; padding: 15px;" class="d-flex f-column align-start">
-                                <p>площадь</p>
-                                <p>габариты</p>
-                                <p>этажность</p>
-                                <p>количество комнат</p>
-                                <p style="margin-top: 30px;">цена проекта</p>
+                                <p class="fs-16 lh-24 fw-400">площадь</p>
+                                <p class="fs-16 lh-24 fw-400">габариты</p>
+                                <p class="fs-16 lh-24 fw-400">этажность</p>
+                                <p class="fs-16 lh-24 fw-400">количество комнат</p>
+                                <p style="margin-top: 30px;" class="fs-16 lh-24 fw-400">цена проекта</p>
                             </div>
                         </div>
                     </div>
@@ -524,11 +526,11 @@
                                 <img alt="a" src="pictures/png/cottage/Z343_1.jpg" class="full-width-percent full-height-percent" />
                             </div>
                             <div style="gap: 15px; padding: 15px;" class="d-flex f-column align-start">
-                                <p>площадь</p>
-                                <p>габариты</p>
-                                <p>этажность</p>
-                                <p>количество комнат</p>
-                                <p style="margin-top: 30px;">цена проекта</p>
+                                <p class="fs-16 lh-24 fw-400">площадь</p>
+                                <p class="fs-16 lh-24 fw-400">габариты</p>
+                                <p class="fs-16 lh-24 fw-400">этажность</p>
+                                <p class="fs-16 lh-24 fw-400">количество комнат</p>
+                                <p style="margin-top: 30px;" class="fs-16 lh-24 fw-400">цена проекта</p>
                             </div>
                         </div>
                     </div>
@@ -545,7 +547,7 @@
     
     <!-- BATH -->
     <div style="margin-top: 70px;" class="full-width-percent d-flex f-column align-start baths-key">
-        <h3>Бани под ключ</h3>
+        <h3 class="fs-56 lh-64 fw-700">Бани под ключ</h3>
         <div class="full-width-percent hidden">
             <div class="swiper-bath swiper-common">
                 <!-- Additional required wrapper -->
@@ -557,11 +559,11 @@
                                 <img alt="a" src="pictures/png/bathese/788b7829b9ab47351f3877c9e9d3e169.jpg" class="full-width-percent full-height-percent" />
                             </div>
                             <div style="gap: 15px; padding: 15px;" class="d-flex f-column align-start">
-                                <p>площадь</p>
-                                <p>габариты</p>
-                                <p>этажность</p>
-                                <p>количество комнат</p>
-                                <p style="margin-top: 30px;">цена проекта</p>
+                                <p class="fs-16 lh-24 fw-400">площадь</p>
+                                <p class="fs-16 lh-24 fw-400">габариты</p>
+                                <p class="fs-16 lh-24 fw-400">этажность</p>
+                                <p class="fs-16 lh-24 fw-400">количество комнат</p>
+                                <p style="margin-top: 30px;" class="fs-16 lh-24 fw-400">цена проекта</p>
                             </div>
                         </div>
                     </div>
@@ -571,11 +573,11 @@
                                 <img alt="a" src="pictures/png/bathese/590x440_banya_corner.jpg" class="full-width-percent full-height-percent" />
                             </div>
                             <div style="gap: 15px; padding: 15px;" class="d-flex f-column align-start">
-                                <p>площадь</p>
-                                <p>габариты</p>
-                                <p>этажность</p>
-                                <p>количество комнат</p>
-                                <p style="margin-top: 30px;">цена проекта</p>
+                                <p class="fs-16 lh-24 fw-400">площадь</p>
+                                <p class="fs-16 lh-24 fw-400">габариты</p>
+                                <p class="fs-16 lh-24 fw-400">этажность</p>
+                                <p class="fs-16 lh-24 fw-400">количество комнат</p>
+                                <p style="margin-top: 30px;" class="fs-16 lh-24 fw-400">цена проекта</p>
                             </div>
                         </div>
                     </div>
@@ -585,11 +587,11 @@
                                 <img alt="a" src="pictures/png/bathese/590x440_bs-6-1.jpg" class="full-width-percent full-height-percent" />
                             </div>
                             <div style="gap: 15px; padding: 15px;" class="d-flex f-column align-start">
-                                <p>площадь</p>
-                                <p>габариты</p>
-                                <p>этажность</p>
-                                <p>количество комнат</p>
-                                <p style="margin-top: 30px;">цена проекта</p>
+                                <p class="fs-16 lh-24 fw-400">площадь</p>
+                                <p class="fs-16 lh-24 fw-400">габариты</p>
+                                <p class="fs-16 lh-24 fw-400">этажность</p>
+                                <p class="fs-16 lh-24 fw-400">количество комнат</p>
+                                <p style="margin-top: 30px;" class="fs-16 lh-24 fw-400">цена проекта</p>
                             </div>
                         </div>
                     </div>
@@ -599,11 +601,11 @@
                                 <img alt="a" src="pictures/png/bathese/6df6ceefb519e5707da2b00fc96a3146.jpg" class="full-width-percent full-height-percent" />
                             </div>
                             <div style="gap: 15px; padding: 15px;" class="d-flex f-column align-start">
-                                <p>площадь</p>
-                                <p>габариты</p>
-                                <p>этажность</p>
-                                <p>количество комнат</p>
-                                <p style="margin-top: 30px;">цена проекта</p>
+                                <p class="fs-16 lh-24 fw-400">площадь</p>
+                                <p class="fs-16 lh-24 fw-400">габариты</p>
+                                <p class="fs-16 lh-24 fw-400">этажность</p>
+                                <p class="fs-16 lh-24 fw-400">количество комнат</p>
+                                <p style="margin-top: 30px;" class="fs-16 lh-24 fw-400">цена проекта</p>
                             </div>
                         </div>
                     </div>
@@ -613,11 +615,11 @@
                                 <img alt="a" src="pictures/png/bathese/6805447a4d64f7d54d8927a57fcc7081.jpg" class="full-width-percent full-height-percent" />
                             </div>
                             <div style="gap: 15px; padding: 15px;" class="d-flex f-column align-start">
-                                <p>площадь</p>
-                                <p>габариты</p>
-                                <p>этажность</p>
-                                <p>количество комнат</p>
-                                <p style="margin-top: 30px;">цена проекта</p>
+                                <p class="fs-16 lh-24 fw-400">площадь</p>
+                                <p class="fs-16 lh-24 fw-400">габариты</p>
+                                <p class="fs-16 lh-24 fw-400">этажность</p>
+                                <p class="fs-16 lh-24 fw-400">количество комнат</p>
+                                <p style="margin-top: 30px;" class="fs-16 lh-24 fw-400">цена проекта</p>
                             </div>
                         </div>
                     </div>
@@ -627,11 +629,11 @@
                                 <img alt="a" src="pictures/png/bathese/bp-31.jpg" class="full-width-percent full-height-percent" />
                             </div>
                             <div style="gap: 15px; padding: 15px;" class="d-flex f-column align-start">
-                                <p>площадь</p>
-                                <p>габариты</p>
-                                <p>этажность</p>
-                                <p>количество комнат</p>
-                                <p style="margin-top: 30px;">цена проекта</p>
+                                <p class="fs-16 lh-24 fw-400">площадь</p>
+                                <p class="fs-16 lh-24 fw-400">габариты</p>
+                                <p class="fs-16 lh-24 fw-400">этажность</p>
+                                <p class="fs-16 lh-24 fw-400">количество комнат</p>
+                                <p style="margin-top: 30px;" class="fs-16 lh-24 fw-400">цена проекта</p>
                             </div>
                         </div>
                     </div>
@@ -641,11 +643,11 @@
                                 <img alt="a" src="pictures/png/bathese/bo-20.jpg" class="full-width-percent full-height-percent" />
                             </div>
                             <div style="gap: 15px; padding: 15px;" class="d-flex f-column align-start">
-                                <p>площадь</p>
-                                <p>габариты</p>
-                                <p>этажность</p>
-                                <p>количество комнат</p>
-                                <p style="margin-top: 30px;">цена проекта</p>
+                                <p class="fs-16 lh-24 fw-400">площадь</p>
+                                <p class="fs-16 lh-24 fw-400">габариты</p>
+                                <p class="fs-16 lh-24 fw-400">этажность</p>
+                                <p class="fs-16 lh-24 fw-400">количество комнат</p>
+                                <p style="margin-top: 30px;" class="fs-16 lh-24 fw-400">цена проекта</p>
                             </div>
                         </div>
                     </div>
@@ -655,11 +657,11 @@
                                 <img alt="a" src="pictures/png/bathese/bo-31.jpg" class="full-width-percent full-height-percent" />
                             </div>
                             <div style="gap: 15px; padding: 15px;" class="d-flex f-column align-start">
-                                <p>площадь</p>
-                                <p>габариты</p>
-                                <p>этажность</p>
-                                <p>количество комнат</p>
-                                <p style="margin-top: 30px;">цена проекта</p>
+                                <p class="fs-16 lh-24 fw-400">площадь</p>
+                                <p class="fs-16 lh-24 fw-400">габариты</p>
+                                <p class="fs-16 lh-24 fw-400">этажность</p>
+                                <p class="fs-16 lh-24 fw-400">количество комнат</p>
+                                <p style="margin-top: 30px;" class="fs-16 lh-24 fw-400">цена проекта</p>
                             </div>
                         </div>
                     </div>
@@ -676,76 +678,76 @@
     
     <!-- HOW WE WORK -->
     <div style="gap: 30px;margin-top: 100px;" class="full-width-percent d-flex f-column align-center schema-block-pc about-key">
-        <p>Как мы работаем?</p>
+        <h4 class="fs-56 lh-64 fw-700">Как мы работаем?</h4>
         <div class="full-width-percent f-column align-center">
             <div class="full-width-percent d-flex f-row align-center justify-center">
-                <p style="border-radius: 100%; border: 1px solid #0a0a0a; height: 72px; width: 72px" class="d-flex f-column align-center justify-center">
+                <p style="border-radius: 100%; border: 1px solid #0a0a0a; height: 72px; width: 72px" class="d-flex f-column align-center justify-center fs-32 lh-40 fw-700">
                     1
                 </p>
                 <svg style="padding: 0 15px; box-sizing: border-box; width: 25%;" height="1" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <line y1="0.5" x2="100%" y2="0.5" stroke="#d7d7d7"/>
                 </svg>
-                <p style="border-radius: 100%; border: 1px solid #0a0a0a; height: 72px; width: 72px" class="d-flex f-column align-center justify-center">
+                <p style="border-radius: 100%; border: 1px solid #0a0a0a; height: 72px; width: 72px" class="d-flex f-column align-center justify-center fs-32 lh-40 fw-700">
                     2
                 </p>
                 <svg style="padding: 0 15px; box-sizing: border-box; width: 25%;" height="1" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <line y1="0.5" x2="100%" y2="0.5" stroke="#d7d7d7"/>
                 </svg>
-                <p style="border-radius: 100%; border: 1px solid #0a0a0a; height: 72px; width: 72px" class="d-flex f-column align-center justify-center">
+                <p style="border-radius: 100%; border: 1px solid #0a0a0a; height: 72px; width: 72px" class="d-flex f-column align-center justify-center fs-32 lh-40 fw-700">
                     3
                 </p>
             </div>
             <div style="gap: 2%;margin-top: 40px;" class="full-width-percent d-flex f-row align-center justify-center">
                 <p style="width: 30%; gap: 20px;" class="d-flex f-column align-center justify-center">
-                    <span class="d-block">
+                    <span class="d-block fs-32 lh-40 fw-700">
                         Оставьте заявку
                     </span>
-                    <span style="text-align: center;" class="d-block">
+                    <span style="text-align: center;" class="d-block fs-20 lh-28 fw-400 paragraph-color">
                         Специалист перезвонит в течение 5 -10 минут. Проконсультирует, сориентирует по срокам, подскажет примерную стоимость.
                     </span>
                 </p>
                 <p style="width: 30%;gap: 20px;" class="d-flex f-column align-center justify-center">
-                    <span class="d-block">
+                    <span class="d-block fs-32 lh-40 fw-700">
                         Выезд специалиста
                     </span>
-                    <span style="text-align: center;" class="d-block">
+                    <span style="text-align: center;" class="d-block fs-20 lh-28 fw-400 paragraph-color">
                         Согласуем удобное время для встречи. Это бесплатно и ни к чему вас не обязывает. Произведем замеры и составим смету объекта.
                     </span>
                 </p>
                 <p style="width: 30%;gap: 20px;" class="d-flex f-column align-center justify-center">
-                    <span class="d-block">
+                    <span class="d-block fs-32 lh-40 fw-700">
                         Подписание договора
                     </span>
-                    <span style="text-align: center;" class="d-block">
+                    <span style="text-align: center;" class="d-block fs-20 lh-28 fw-400 paragraph-color">
                         Выслушиваем Ваши пожелания. При необходимости корректируется смета. Фиксируем сроки и стоимость в договоре, согласовываем дату выхода мастеров.
                     </span>
                 </p>
             </div>
             <div style="margin-top: 50px;" class="full-width-percent d-flex f-row align-center justify-center">
-                <p style="border-radius: 100%; border: 1px solid #0a0a0a; height: 72px; width: 72px" class="d-flex f-column align-center justify-center">
+                <p style="border-radius: 100%; border: 1px solid #0a0a0a; height: 72px; width: 72px" class="d-flex f-column align-center justify-center fs-32 lh-40 fw-700">
                     4
                 </p>
                 <svg style="padding: 0 15px; box-sizing: border-box; width: 25%;" height="1" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <line y1="0.5" x2="100%" y2="0.5" stroke="#d7d7d7"/>
                 </svg>
-                <p style="border-radius: 100%; border: 1px solid #0a0a0a; height: 72px; width: 72px" class="d-flex f-column align-center justify-center">
+                <p style="border-radius: 100%; border: 1px solid #0a0a0a; height: 72px; width: 72px" class="d-flex f-column align-center justify-center fs-32 lh-40 fw-700">
                     5
                 </p>
             </div>
             <div style="gap: 2%;margin-top: 40px;" class="full-width-percent d-flex f-row align-center justify-center">
                 <p style="width: 30%; gap: 20px;" class="d-flex f-column align-center justify-center">
-                    <span class="d-block">
+                    <span class="d-block fs-32 lh-40 fw-700">
                         Начало работы
                     </span>
-                    <span style="text-align: center;" class="d-block">
+                    <span style="text-align: center;" class="d-block fs-20 lh-28 fw-400 paragraph-color">
                         Работаем строго по плану. Мастера вместе с прорабом выходят на объект и приступают к демонтажным, подготовительным, а затем черновым и чистовым работам.
                     </span>
                 </p>
                 <p style="width: 30%;gap: 20px;" class="d-flex f-column align-center justify-center">
-                    <span class="d-block">
+                    <span class="d-block fs-32 lh-40 fw-700">
                         Сдача объекта
                     </span>
-                    <span style="text-align: center;" class="d-block">
+                    <span style="text-align: center;" class="d-block fs-20 lh-28 fw-400 paragraph-color">
                         Вы проверяете качество выполненных работ. Подписываем финальный акт приема объекта.
                     </span>
                 </p>
@@ -755,61 +757,61 @@
     
     <!-- HOW WE WORK -->
     <div style="gap: 30px;margin-top: 100px;" class="full-width-percent f-column align-center schema-block-mobile about-key">
-        <p>Как мы работаем?</p>
+        <h4 class="fs-56 lh-64 fw-700">Как мы работаем?</h4>
         <div class="full-width-percent f-column align-center">
             <div style="gap: 2%;margin-top: 40px; gap: 40px;" class="full-width-percent d-flex f-column align-center justify-center">
                 <p style="width: 60%; gap: 20px;" class="d-flex f-column align-center justify-center">
-                    <span style="border-radius: 100%; border: 1px solid #0a0a0a; height: 72px; width: 72px" class="d-flex f-column align-center justify-center">
+                    <span style="border-radius: 100%; border: 1px solid #0a0a0a; height: 72px; width: 72px" class="d-flex f-column align-center justify-center fs-32 lh-40 fw-700">
                         1
                     </span>
-                    <span class="d-block">
+                    <span class="d-block fs-32 lh-40 fw-700">
                         Оставьте заявку
                     </span>
-                    <span style="text-align: center;" class="d-block">
+                    <span style="text-align: center;" class="d-block fs-20 lh-28 fw-400 paragraph-color">
                         Специалист перезвонит в течение 5 -10 минут. Проконсультирует, сориентирует по срокам, подскажет примерную стоимость.
                     </span>
                 </p>
                 <p style="width: 60%;gap: 20px;" class="d-flex f-column align-center justify-center">
-                    <span style="border-radius: 100%; border: 1px solid #0a0a0a; height: 72px; width: 72px" class="d-flex f-column align-center justify-center">
+                    <span style="border-radius: 100%; border: 1px solid #0a0a0a; height: 72px; width: 72px" class="d-flex f-column align-center justify-center fs-32 lh-40 fw-700">
                         2
                     </span>
-                    <span class="d-block">
+                    <span class="d-block fs-32 lh-40 fw-700">
                         Выезд специалиста
                     </span>
-                    <span style="text-align: center;" class="d-block">
+                    <span style="text-align: center;" class="d-block fs-20 lh-28 fw-400 paragraph-color">
                         Согласуем удобное время для встречи. Это бесплатно и ни к чему вас не обязывает. Произведем замеры и составим смету объекта.
                     </span>
                 </p>
                 <p style="width: 60%;gap: 20px;" class="d-flex f-column align-center justify-center">
-                    <span style="border-radius: 100%; border: 1px solid #0a0a0a; height: 72px; width: 72px" class="d-flex f-column align-center justify-center">
+                    <span style="border-radius: 100%; border: 1px solid #0a0a0a; height: 72px; width: 72px" class="d-flex f-column align-center justify-center fs-32 lh-40 fw-700">
                         3
                     </span>
-                    <span class="d-block">
+                    <span class="d-block fs-32 lh-40 fw-700">
                         Подписание договора
                     </span>
-                    <span style="text-align: center;" class="d-block">
+                    <span style="text-align: center;" class="d-block fs-20 lh-28 fw-400 paragraph-color">
                         Выслушиваем Ваши пожелания. При необходимости корректируется смета. Фиксируем сроки и стоимость в договоре, согласовываем дату выхода мастеров.
                     </span>
                 </p>
                 <p style="width: 60%; gap: 20px;" class="d-flex f-column align-center justify-center">
-                    <span style="border-radius: 100%; border: 1px solid #0a0a0a; height: 72px; width: 72px" class="d-flex f-column align-center justify-center">
+                    <span style="border-radius: 100%; border: 1px solid #0a0a0a; height: 72px; width: 72px" class="d-flex f-column align-center justify-center fs-32 lh-40 fw-700">
                         4
                     </span>
-                    <span class="d-block">
+                    <span class="d-block fs-32 lh-40 fw-700">
                         Начало работы
                     </span>
-                    <span style="text-align: center;" class="d-block">
+                    <span style="text-align: center;" class="d-block fs-20 lh-28 fw-400 paragraph-color">
                         Работаем строго по плану. Мастера вместе с прорабом выходят на объект и приступают к демонтажным, подготовительным, а затем черновым и чистовым работам.
                     </span>
                 </p>
                 <p style="width: 60%;gap: 20px;" class="d-flex f-column align-center justify-center">
-                    <span style="border-radius: 100%; border: 1px solid #0a0a0a; height: 72px; width: 72px" class="d-flex f-column align-center justify-center">
+                    <span style="border-radius: 100%; border: 1px solid #0a0a0a; height: 72px; width: 72px" class="d-flex f-column align-center justify-center fs-32 lh-40 fw-700">
                         5
                     </span>
-                    <span class="d-block">
+                    <span class="d-block fs-32 lh-40 fw-700">
                         Сдача объекта
                     </span>
-                    <span style="text-align: center;" class="d-block">
+                    <span style="text-align: center;" class="d-block fs-20 lh-28 fw-400 paragraph-color">
                         Вы проверяете качество выполненных работ. Подписываем финальный акт приема объекта.
                     </span>
                 </p>
@@ -819,15 +821,15 @@
     
     <!-- OUR ADVANTAGES -->
     <div style="gap: 40px;margin-top: 70px;" class="d-flex f-column align-center">
-        <p>
+        <h4 class="fs-56 lh-64 fw-700">
             Наши преимущества
-        </p>
+        </h4>
             <div style="gap: 30px;" class="d-flex align-center advantages-card">
                 <div style="gap: 30px;" class="advantages-card-content hidden full-width-percent full-height-percent d-flex f-column justify-center">
-                <span class="d-block">
+                <span class="d-block fs-40 lh-48 fw-700">
                     Опытные рабочие
                 </span>
-                    <span class="d-block">
+                    <span class="d-block fs-24 lh-32 fw-400 paragraph-color">
                     Мы имеем слаженную команду квалифицированных профессионалов с опытом более 10 лет. Выполняем работу в строго отведенные сроки поставленного графика. Отвечаем наивысшему уровню качества. За нами не переделывают!
                 </span>
                 </div>
@@ -840,20 +842,20 @@
                     <img alt="a" src="pictures/png/advantages/advantage2.jpg" class="full-width-percent full-height-percent">
                 </div>
                 <div style="gap: 30px;" class="advantages-card-content hidden full-width-percent full-height-percent d-flex f-column justify-center">
-                <span class="d-block">
+                <span class="d-block fs-40 lh-48 fw-700">
                     Проверенные поставщики
                 </span>
-                    <span class="d-block">
+                    <span class="d-block fs-24 lh-32 fw-400 paragraph-color">
                     За годы работы на рынке услуг мы смогли отобрать только самых надежных и проверенных поставщиков, качество которых проверяем лично.
                 </span>
                 </div>
             </div>
             <div style="gap: 30px;" class="d-flex align-center advantages-card">
                 <div style="gap: 30px;" class="advantages-card-content hidden full-width-percent full-height-percent d-flex f-column justify-center">
-                <span class="d-block">
+                <span class="d-block fs-40 lh-48 fw-700">
                     Стоимость услуг
                 </span>
-                    <span class="d-block">
+                    <span class="d-block fs-24 lh-32 fw-400 paragraph-color">
                     Стоимость работ под ключ у нас доступна для большого количества людей. Мы стараемся подобрать подходящие материалы на любой бюджет, оговаривая все преимущества и недостатки. Поэтапная оплата работы.
                 </span>
                 </div>
@@ -865,7 +867,7 @@
     
     <!-- OUR PROJECTS -->
     <div style="margin-top: 70px;gap: 30px;" class="d-flex f-column align-center full-width-percent projects-key">
-        <h4>Фото с объектов</h4>
+        <h4 class="fs-56 lh-64 fw-700">Фото с объектов</h4>
         <div style="flex-wrap: wrap;gap: 24px;" class="d-flex f-row">
             <div class="object-photo-card">
                 <img alt="a" src="pictures/png/examples/ex1.jpg" class="full-width-percent full-height-percent" />
@@ -930,33 +932,33 @@
     <!-- FORM -->
     <div style="gap: 40px; margin-top: 70px;" class="d-flex f-column align-center full-width-percent">
         <div style="gap: 20px;" class="full-width-percent d-flex f-column align-start">
-        <h5>
+        <h5 class="fs-40 lh-48 fw-700">
             Заказать звонок
         </h5>
-        <p>
+        <h6 class="fs-28 lh-20 fw-400 paragraph-color">
             На все имеющиеся вопросы мы всегда готовы ответить!
-        </p>
+        </h6>
         </div>
         <form style="gap: 16px;" class="full-width-percent d-flex form-container">
             <div style="flex: 1 1;gap: 16px;padding: 0 20px;" class="d-flex f-column align-start">
-                <input type="text" placeholder="Имя" style="border-bottom: 1px solid #d7d7d7; padding: 5px;" class="full-width-percent" />
-                <input type="text" placeholder="Дата" style="border-bottom: 1px solid #d7d7d7; padding: 5px;" class="full-width-percent" />
-                <input type="text" placeholder="Комментарий" style="border-bottom: 1px solid #d7d7d7; padding: 5px;" class="full-width-percent" />
+                <input type="text" placeholder="Имя" style="border-bottom: 1px solid #d7d7d7; padding: 5px;" class="full-width-percent fs-16 lh-24 fw-300 paragraph-color" />
+                <input type="text" placeholder="Дата" style="border-bottom: 1px solid #d7d7d7; padding: 5px;" class="full-width-percent fs-16 lh-24 fw-300 paragraph-color" />
+                <input type="text" placeholder="Комментарий" style="border-bottom: 1px solid #d7d7d7; padding: 5px;" class="full-width-percent fs-16 lh-24 fw-300 paragraph-color" />
             </div>
             <div style="flex: 1 1;gap: 16px;padding: 0 20px;" class="d-flex f-column align-start">
-                <input type="text" placeholder="Телефон *" style="border-bottom: 1px solid #d7d7d7; padding: 5px;" class="full-width-percent" />
-                <input type="text" placeholder="Время" style="border-bottom: 1px solid #d7d7d7; padding: 5px;" class="full-width-percent" />
-                <div style="gap:15px;" class="d-flex f-row align-start jutify-start full-width-percent">
+                <input type="text" placeholder="Телефон *" style="border-bottom: 1px solid #d7d7d7; padding: 5px;" class="full-width-percent fs-16 lh-24 fw-300 paragraph-color" />
+                <input type="text" placeholder="Время" style="border-bottom: 1px solid #d7d7d7; padding: 5px;" class="full-width-percent fs-16 lh-24 fw-300 paragraph-color" />
+                <div style="gap:15px;" class="d-flex f-row align-start jutify-start full-width-percent fs-16 lh-24 fw-300">
                     <div>
                         <input type="checkbox">
                     </div>
                     <div>
-                        <p>
+                        <p class="fs-16 lh-24 fw-300 paragraph-color">
                             Нажимая на кнопку, вы соглашаетесь с условиями обработки персональных данных и <a href="https://rosstat.gov.ru/politika-konfidencialnosti">политикой конфиденциальности</a> 
                         </p>
                     </div>
                 </div>
-                <button style="padding: 20px 30px; border: 2px solid #0a0a0a;border-radius: 8px;">
+                <button style="padding: 0 15px; border: 2px solid #0a0a0a;border-radius: 8px;" class="fs-16 lh-44 fw-400">
                     Отправить
                 </button>
             </div>
@@ -965,17 +967,19 @@
     
     <footer style="margin-top: 55px;gap: 20px;" class="d-flex f-row align-start justify-between full-width-percent">
         <div style="gap: 55px;" class="d-flex f-column align-start">
-            <p>logo</p>
-            <p>ГрандСтрой 2022 — 2023 ©</p>
+            <div style="width: 115px; height: 65px;" class="hidden">
+                <img alt="logo" src="pictures/png/photo_2023-03-11_15-36-08.jpg" class="full-width-percent full-height-percent" />
+            </div>
+            <p class="fs-16 lh-24 fw-400 paragraph-color">ГрандСтрой 2022 — 2023 ©</p>
         </div>
         <div style="gap: 25px;" class="d-flex f-column align-start">
             <div style="gap: 5px;" class="d-flex f-column align-start">
-                  <p>+7 986 223‑71‑36</p>
-            <p>Пн-Вс 7:00-23:00</p>
+                <p class="fs-16 lh-24 fw-400"><b>+7 986 223‑71‑36</b></p>
+                <p class="fs-16 lh-24 fw-400">Пн-Вс 7:00-23:00</p>
             </div>
             <div style="gap: 5px;" class="d-flex f-column align-start">
-                  <p>Адрес</p>
-            <p>Москва и московская область</p>
+                <p class="fs-16 lh-24 fw-400"><b>Адрес</b></p>
+                <p class="fs-16 lh-24 fw-400">Москва и московская область</p>
             </div>
         </div>
     </footer>

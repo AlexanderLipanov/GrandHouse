@@ -1,0 +1,110 @@
+
+:root {
+    --font-family-Poppins: 'Poppins', sans-serif;
+    --font-family-Roboto: 'Roboto', sans-serif;
+    --common-gray: rgba(17,17,17,.46);
+}
+
+.ff {
+    font-family: var(--font-family-Poppins);
+}
+
+/* FONT SIZE */
+
+.fs-112 {
+    font-size: 112px;
+}
+
+.fs-72 {
+    font-size: 72px;
+}
+
+.fs-56 {
+    font-size: 56px;
+}
+
+.fs-40 {
+    font-size: 40px;
+}
+
+.fs-32 {
+    font-size: 32px;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+/* LINE HEIGHT */
+
+.lh-120 {
+    line-height: 120px;
+}
+
+.lh-80 {
+    line-height: 80px;
+}
+
+.lh-64 {
+    line-height: 64px;
+}
+
+.lh-48 {
+    line-height: 48px;
+}
+
+.lh-44 {
+    line-height: 44px;
+}
+
+.lh-40 {
+    line-height: 40px;
+}
+
+.lh-32 {
+    line-height: 32px;
+}
+
+.lh-28 {
+    line-height: 28px;
+}
+
+.lh-24 {
+    line-height: 24px;
+}
+
+/* FONT WEIGHT */
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+/* COLOR */
+
+.paragraph-color {
+    color: rgba(17,17,17,.56);
+}
+
+
+
+
