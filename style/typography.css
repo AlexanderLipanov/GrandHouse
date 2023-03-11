@@ -5,7 +5,7 @@
     --common-gray: rgba(17,17,17,.46);
 }
 
-.ff {
+.ff-general {
     font-family: var(--font-family-Poppins);
 }
 

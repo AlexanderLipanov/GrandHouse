@@ -6,7 +6,7 @@
     <title>Кладочные работы в Москве и Московской области   </title>
     <link rel="stylesheet" type="text/css" href="style/root.css"/>
 </head>
-<body style="overflow-x:hidden;margin-bottom: 50px; " class="full-width-percent d-flex f-column align-center">
+<body id="page-scroll" style="overflow-x:hidden;margin-bottom: 50px; " class="full-width-percent d-flex f-column align-center ff-general">
 <header id="header" style="background-color: #ffff;z-index: 15;" class="header p-fixed full-width-percent d-flex f-column align-center hidden">
     <div style="top: 0; max-width: 1280px;" class="full-width-percent d-flex f-row justify-between align-center">
         <p style="padding: 0 15px;" class="fs-16 lh-24 fw-400"> +7 986 223‑71‑36 <br/>
@@ -24,7 +24,7 @@
     <div style="row-gap: 20px; padding: 0 15px;" class="full-width-percent d-flex f-column align-start align-se">
         <div style="gap: 14px;" class="d-flex f-column align-start">
             <h1 class="home-title fs-40 lh-48 fw-400">Кладочные работы в Москве и Московской области</h1>
-            <a style="padding: 0 15px; background-color: #0a0a0a; border-radius: 100px; color: #ffffff;" class="fs-16 lh-44 fw-400 d-block">
+            <a data-goto=".form-key" name="scroll-button" style="padding: 0 15px; background-color: #0a0a0a; border-radius: 100px; color: #ffffff;" class="fs-16 lh-44 fw-400 d-block">
                 Оставить заявку
             </a>
         </div>
@@ -107,7 +107,7 @@
         </div>
     </div>
 </div>
-<div style="background-image: url('pictures/png/masonry/1-8.jpg'); background-position: 50% 50%;background-size: cover; background-repeat: no-repeat;margin-top: 50px;" class="full-width-percent full-height-viewport hidden d-flex f-column align-center justify-center">
+<div style="background-image: url('pictures/png/masonry/1-8.jpg'); background-position: 50% 50%;background-size: cover; background-repeat: no-repeat;margin-top: 50px;" class="full-width-percent full-height-viewport hidden d-flex f-column align-center justify-center form-key">
     <div style="gap: 40px;padding: 30px; max-width: 840px;background-color: #ffffff;" class="d-flex f-column align-center full-width-percent">
         <div style="gap: 20px;" class="full-width-percent d-flex f-column align-start">
             <h5 class="fs-40 lh-48 fw-700">
@@ -160,5 +160,6 @@
         </div>
     </div>
 </footer>
+<script src="js/menu.js"></script>
 </body>
 </html>

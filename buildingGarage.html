@@ -9,13 +9,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
-<body style="overflow-x:hidden;margin-bottom: 50px; " class="full-width-percent d-flex f-column align-center">
+<body id="page-scroll" style="overflow-x:hidden;margin-bottom: 50px; " class="full-width-percent d-flex f-column align-center ff-general">
 <header id="header" style="background-color: #ffff;z-index: 15;" class="header p-fixed full-width-percent d-flex f-column align-center hidden">
     <div style="top: 0; max-width: 1280px;" class="full-width-percent d-flex f-row justify-between align-center">
         <p style="padding: 0 15px;"> +7 986 223‑71‑36 <br/>
             Москва и Московская область</p>
         <div style="padding: 0 15px;">
-            <p>logo</p>
+            <div style="width: 115px; height: 65px;" class="hidden">
+                <img alt="logo" src="pictures/png/photo_2023-03-11_15-36-08.jpg" class="full-width-percent full-height-percent" />
+            </div>
         </div>
         <p>Пн-Вс 07:00-23:00</p>
     </div>
@@ -26,7 +28,7 @@
         <div style="gap: 14px;" class="d-flex f-column align-start">
             <h1 class="home-title fs-56 lh-64 fw-700">Строительство гаражей под ключ Москва и МО</h1>
             <p class="home-title fs-16 lh-24 paragraph-color">Разработаем дизайн-проект ремонта, согласуем перепланировку, привезем материалы. После ремонта вывезем мусор и проведем влажную уборку</p>
-            <a style="padding: 0 15px; background-color: #0a0a0a; border-radius: 100px; color: #ffffff;" class="fs-16 lh-44 fw-400 d-block">
+            <a data-goto=".form-key" name="scroll-button" style="padding: 0 15px; background-color: #0a0a0a; border-radius: 100px; color: #ffffff;" class="fs-16 lh-44 fw-400 d-block">
                 Оставить заявку
             </a>
         </div>
@@ -213,7 +215,7 @@
         </div>
     </div>
 </div>
-<div style="background-image: url('pictures/png/garage/1667369155_1-colodu-club-p-oborudovanie-dlya-domashnego-garazha-oboi-1.jpg'); background-position: 50% 50%;margin-top: 50px;" class="full-width-percent full-height-viewport hidden d-flex f-column align-center justify-center">
+<div style="background-image: url('pictures/png/garage/1667369155_1-colodu-club-p-oborudovanie-dlya-domashnego-garazha-oboi-1.jpg'); background-position: 50% 50%;margin-top: 50px;" class="full-width-percent full-height-viewport hidden d-flex f-column align-center justify-center form-key">
     <div style="gap: 40px;padding: 30px; max-width: 840px;background-color: #ffffff;" class="d-flex f-column align-center full-width-percent">
         <div style="gap: 20px;" class="full-width-percent d-flex f-column align-start">
             <h5 class="fs-40 lh-48 fw-700">
@@ -250,7 +252,9 @@
 </div>
 <footer style="margin-top: 55px;gap: 20px;padding: 0 15px;box-sizing: border-box;" class="d-flex f-row align-start justify-between full-width-percent">
     <div style="gap: 55px;" class="d-flex f-column align-start">
-        <p>logo</p>
+        <div style="width: 115px; height: 65px;" class="hidden">
+            <img alt="logo" src="pictures/png/photo_2023-03-11_15-36-08.jpg" class="full-width-percent full-height-percent" />
+        </div>
         <p class="fs-16 lh-24 fw-400 paragraph-color">ГрандСтрой 2022 — 2023 ©</p>
     </div>
     <div style="gap: 25px;" class="d-flex f-column align-start">
@@ -264,5 +268,6 @@
         </div>
     </div>
 </footer>
+<script src="js/menu.js"></script>
 </body>
 </html>

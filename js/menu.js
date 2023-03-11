@@ -32,12 +32,12 @@ if(scrollLinks.length > 0)
 function onScrollLinkClick(e) {
     console.log("onScrollLinkClick");
     const menuLink = e.target;
-    let d = document.getElementById("page-1").scrollTop;
+    let d = document.getElementById("page-scroll").scrollTop;
     const gotoBlock = document.querySelector(menuLink.dataset.goto);
     let t = gotoBlock.getBoundingClientRect().top;
     let b = document.getElementById("header");
     let h = b === undefined || b === null ? 65 : b.offsetHeight;
-    const gotoBlockValue = d + t + scrollY - h - 20;
+    const gotoBlockValue = d + t + scrollY - h + 30;
     console.log(gotoBlockValue);
     window.scrollTo({
         left: null,
