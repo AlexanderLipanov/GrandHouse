@@ -2,7 +2,14 @@
     width: 31%;
 }
 
+.building-house-how-we-work {
+    flex-direction: row;
+}
+
 @media (max-width: 1045px) {
+    .building-house-how-we-work {
+        flex-direction: column;
+    }
     .building-house-advantages-card {
         width: 47%;
     }
