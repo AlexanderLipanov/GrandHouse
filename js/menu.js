@@ -48,3 +48,9 @@ function onScrollLinkClick(e) {
     console.log("end scrolling");
 }
 
+let confidentional = false;
+
+function testComfidentional() {
+    console.log(confidentional);
+}
+
