@@ -943,26 +943,26 @@
             На все имеющиеся вопросы мы всегда готовы ответить!
         </p>
         </div>
-        <form action="mail.php" method="POST" style="gap: 16px;" class="full-width-percent d-flex form-container">
+        <form style="gap: 16px;" class="full-width-percent d-flex form-container">
             <div style="flex: 1 1;gap: 16px;padding: 0 20px;" class="d-flex f-column align-start">
-                <input type="text" name="form_user_name" placeholder="Имя" style="border-bottom: 1px solid #d7d7d7; padding: 5px;" class="full-width-percent fs-16 lh-24 fw-300 paragraph-color" />
-                <input type="text" name="form_date" placeholder="Дата" style="border-bottom: 1px solid #d7d7d7; padding: 5px;" class="full-width-percent fs-16 lh-24 fw-300 paragraph-color" />
-                <input type="text" name="form_comment" placeholder="Комментарий" style="border-bottom: 1px solid #d7d7d7; padding: 5px;" class="full-width-percent fs-16 lh-24 fw-300 paragraph-color" />
+                <input id="name-input" onchange="inputNameChange()" type="text" name="form_user_name" placeholder="Имя" style="border-bottom: 1px solid #d7d7d7; padding: 5px;" class="full-width-percent fs-16 lh-24 fw-300 paragraph-color" />
+                <input id="date-input" onchange="inputDateChange()" type="text" name="form_date" placeholder="Дата" style="border-bottom: 1px solid #d7d7d7; padding: 5px;" class="full-width-percent fs-16 lh-24 fw-300 paragraph-color" />
+                <input id="comment-input" onchange="inputCommentChange()" type="text" name="form_comment" placeholder="Комментарий" style="border-bottom: 1px solid #d7d7d7; padding: 5px;" class="full-width-percent fs-16 lh-24 fw-300 paragraph-color" />
             </div>
             <div style="flex: 1 1;gap: 16px;padding: 0 20px;" class="d-flex f-column align-start">
-                <input type="text" name="form_user_number" placeholder="Телефон *" style="border-bottom: 1px solid #d7d7d7; padding: 5px;" class="full-width-percent fs-16 lh-24 fw-300 paragraph-color" />
-                <input type="text" name="form_time" placeholder="Время" style="border-bottom: 1px solid #d7d7d7; padding: 5px;" class="full-width-percent fs-16 lh-24 fw-300 paragraph-color" />
+                <input id="number-input" onchange="inputNumberChange()" type="text" name="form_user_number" placeholder="Телефон *" style="border-bottom: 1px solid #d7d7d7; padding: 5px;" class="full-width-percent fs-16 lh-24 fw-300 paragraph-color" />
+                <input id="time-input" onchange="inputTimeChange()" type="text" name="form_time" placeholder="Время" style="border-bottom: 1px solid #d7d7d7; padding: 5px;" class="full-width-percent fs-16 lh-24 fw-300 paragraph-color" />
                 <div style="gap:15px;" class="d-flex f-row align-start jutify-start full-width-percent fs-16 lh-24 fw-300">
                     <div>
-                        <input value="confidentional" onclick="testComfidentional()" type="checkbox">
+                        <input id="policy-checkbox" onclick="toggleCheckbox()" type="checkbox">
                     </div>
                     <div>
                         <p class="fs-16 lh-24 fw-300 paragraph-color">
-                            Нажимая на кнопку, вы соглашаетесь с условиями обработки персональных данных и <a href="https://rosstat.gov.ru/politika-konfidencialnosti">политикой конфиденциальности</a> 
+                            Нажимая на кнопку, вы соглашаетесь с условиями обработки персональных данных и <a href="https://rosstat.gov.ru/politika-konfidencialnosti">политикой конфиденциальности</a>
                         </p>
                     </div>
                 </div>
-                <button disabled="confidentional" type="submit" style="padding: 0 15px; border: 2px solid #0a0a0a;border-radius: 8px;" class="fs-16 lh-44 fw-400">
+                <button id="send-form-button" onclick="sendMail(); return false;" style="padding: 0 15px; border: 2px solid #0a0a0a;border-radius: 8px;" class="fs-16 lh-44 fw-400">
                     Отправить
                 </button>
             </div>
@@ -992,6 +992,7 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script src="js/swiper.js"></script>
 <script src="js/menu.js"></script>
+<script src="js/form.js"></script>
 
 </body>
 </html>
