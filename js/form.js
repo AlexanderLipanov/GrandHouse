@@ -11,14 +11,11 @@ let mail = {
 
 
 let policyCheckbox = document.getElementById("policy-checkbox");
-let sendFormButton = document.getElementById("send-form-button");
+let sendFormButton = document.getElementById("send");
 
 sendFormButton.disabled = true;
 function toggleCheckbox() {
     sendFormButton.disabled = !policyCheckbox.checked;
-    
-    console.log(policyCheckbox.checked, "Checked");
-    console.log(sendFormButton.disabled, "Disabled");
 }
 
 let inputName = document.getElementById("name-input");

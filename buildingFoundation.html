@@ -119,15 +119,14 @@
                 Менеджер свяжется с вами в течение 5 минут, ответит на вопросы и поможет оформить заказ
             </p>
         </div>
-        <form style="gap: 16px;" class="full-width-percent d-flex form-container">
+        <form method="post" id="form" name="form" style="gap: 16px;" class="full-width-percent d-flex form-container">
             <div style="flex: 1 1;gap: 16px;padding: 0 20px;" class="d-flex f-column align-start">
-                <input id="name-input" onchange="inputNameChange()" type="text" name="form_user_name" placeholder="Имя" style="border-bottom: 1px solid #d7d7d7; padding: 5px;" class="full-width-percent fs-16 lh-24 fw-300 paragraph-color" />
-                <input id="date-input" onchange="inputDateChange()" type="text" name="form_date" placeholder="Дата" style="border-bottom: 1px solid #d7d7d7; padding: 5px;" class="full-width-percent fs-16 lh-24 fw-300 paragraph-color" />
-                <input id="comment-input" onchange="inputCommentChange()" type="text" name="form_comment" placeholder="Комментарий" style="border-bottom: 1px solid #d7d7d7; padding: 5px;" class="full-width-percent fs-16 lh-24 fw-300 paragraph-color" />
+                <input id="name" type="text" name="name" placeholder="Имя" style="border-bottom: 1px solid #d7d7d7; padding: 5px;" class="full-width-percent fs-16 lh-24 fw-300 paragraph-color" />
+                <input id="date" type="datetime" name="date" placeholder="Дата" style="border-bottom: 1px solid #d7d7d7; padding: 5px;" class="full-width-percent fs-16 lh-24 fw-300 paragraph-color" />
+                <input id="comment" type="text" name="comment" placeholder="Комментарий" style="border-bottom: 1px solid #d7d7d7; padding: 5px;" class="full-width-percent fs-16 lh-24 fw-300 paragraph-color" />
             </div>
             <div style="flex: 1 1;gap: 16px;padding: 0 20px;" class="d-flex f-column align-start">
-                <input id="number-input" onchange="inputNumberChange()" type="text" name="form_user_number" placeholder="Телефон *" style="border-bottom: 1px solid #d7d7d7; padding: 5px;" class="full-width-percent fs-16 lh-24 fw-300 paragraph-color" />
-                <input id="time-input" onchange="inputTimeChange()" type="text" name="form_time" placeholder="Время" style="border-bottom: 1px solid #d7d7d7; padding: 5px;" class="full-width-percent fs-16 lh-24 fw-300 paragraph-color" />
+                <input id="phone" type="number" name="phone" placeholder="Телефон *" style="border-bottom: 1px solid #d7d7d7; padding: 5px;" class="full-width-percent fs-16 lh-24 fw-300 paragraph-color" />
                 <div style="gap:15px;" class="d-flex f-row align-start jutify-start full-width-percent fs-16 lh-24 fw-300">
                     <div>
                         <input id="policy-checkbox" onclick="toggleCheckbox()" type="checkbox">
@@ -138,9 +137,7 @@
                         </p>
                     </div>
                 </div>
-                <button id="send-form-button" onclick="sendMail(); return false;" style="padding: 0 15px; border: 2px solid #0a0a0a;border-radius: 8px;" class="fs-16 lh-44 fw-400">
-                    Отправить
-                </button>
+                <input id="send" type="submit" style="padding: 0 15px; border: 2px solid #0a0a0a;border-radius: 8px;" class="fs-16 lh-44 fw-400" placeholder="Отправить" />
             </div>
         </form>
     </div>
@@ -163,6 +160,11 @@
         </div>
     </div>
 </footer>
+<script
+  src="https://code.jquery.com/jquery-3.6.4.min.js"
+  integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+  crossorigin="anonymous"></script>
+  <script src="js/sendform.js"></script>
 <script src="js/menu.js"></script>
 <script src="js/form.js"></script>
 </body>
