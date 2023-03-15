@@ -1,5 +1,5 @@
 <?php
-$sendto   = "info@travel-kmv.ru , sale@travel-kmv.ru"; // Обязательно измените e-mail на свой
+$sendto   = "grand.house.2023@mail.ru"; // Обязательно измените e-mail на свой
 $username = $_POST['name'];
 $userphone = $_POST['phone'];
 $userdate = $_POST['date'];
@@ -7,7 +7,7 @@ $usercomment = $_POST['comment'];
 
 // Формирование заголовка письма
 $subject  = "Заявка с сайта GrandHouse";
-$headers .= "From: Строительство домов <info@travel-kmv.ru>\r\n"; 
+$headers .= "From: Строительство домов <grandhousemessaging@mail.ru>\r\n"; 
 $headers .= "Reply-To: ". strip_tags($usermail) . "\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html;charset=utf-8 \r\n";
