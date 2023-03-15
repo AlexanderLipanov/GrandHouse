@@ -12,7 +12,7 @@ if ('' === phone) return alert('Введите номер телефона');
 $("#send").replaceWith("<em>отправка...</em>");
 $.ajax({
 type: 'POST',
-url: './php/sendmessage.php',
+url: '../php/sendmessage.php',
 data: $("#contact").serialize(),
 success: function(data) {
 if(data == "true") {
