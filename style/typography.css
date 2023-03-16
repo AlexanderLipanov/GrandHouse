@@ -9,6 +9,10 @@
     font-family: var(--font-family-Poppins);
 }
 
+.ff-big-number {
+    font-family: var(--font-family-Roboto);
+}
+
 /* FONT SIZE */
 
 .fs-112 {
