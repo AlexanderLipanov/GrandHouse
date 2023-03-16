@@ -1,5 +1,42 @@
 
 const px = "px";
+const currentUrls = ["frame-key", "foam-key", "timber-key", "cottages-key"];
+
+window.onload = function() {
+    
+maybeScroll();
+}
+
+function  maybeScroll() {
+    let url = window.location;
+    
+    console.log(url);
+    
+    console.log(url.search);
+    let searchitems = url.search.split("?");
+    console.log(url.search.split("?"));
+
+    searchitems.forEach(i => {
+        if(i !== "" && currentUrls.includes(i)) {
+            
+            console.log(i);
+            
+            let d = document.getElementById("page-scroll").scrollTop;
+            let gotoBlock = document.querySelector("." + i);
+            let t = gotoBlock.getBoundingClientRect().top;
+            let b = document.getElementById("header");
+            let h = b === undefined || b === null ? 65 : b.offsetHeight;
+            const gotoBlockValue = d + t + scrollY - h + 30;
+            console.log(gotoBlockValue);
+            window.scrollTo({
+                left: null,
+                top: gotoBlockValue,
+                behavior: "smooth",
+            });
+        }
+    });
+}
+
 
 let burgerLinksContainer = document.getElementById("burger-links-container");
 function toggleLinksContainer() {
@@ -30,7 +67,7 @@ if(scrollLinks.length > 0)
 }
 
 function onScrollLinkClick(e) {
-    console.log("onScrollLinkClick");
+    
     const menuLink = e.target;
     let d = document.getElementById("page-scroll").scrollTop;
     const gotoBlock = document.querySelector(menuLink.dataset.goto);
@@ -45,6 +82,5 @@ function onScrollLinkClick(e) {
         behavior: "smooth",
     });
     e.preventDefault();
-    console.log("end scrolling");
 }
 
