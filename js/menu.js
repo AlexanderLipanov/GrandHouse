@@ -19,8 +19,6 @@ function  maybeScroll() {
     searchitems.forEach(i => {
         if(i !== "" && currentUrls.includes(i)) {
             
-            console.log(i);
-            
             let d = document.getElementById("page-scroll").scrollTop;
             let gotoBlock = document.querySelector("." + i);
             let t = gotoBlock.getBoundingClientRect().top;
