@@ -13,9 +13,9 @@ const swiperTimber = new Swiper('.swiper-timber', {
         el: '.swiper-pagination',
         type: 'bullets',
     },
-    autoplay: {
-        delay: 3300,
-    },
+    // autoplay: {
+    //     delay: 3300,
+    // },
     breakpoints: {
         320: {
             slidesPerView: 1,
@@ -47,9 +47,9 @@ const swiperFoam = new Swiper('.swiper-foam', {
         el: '.swiper-pagination',
         type: 'bullets',
     },
-    autoplay: {
-        delay: 3300,
-    },
+    // autoplay: {
+    //     delay: 3300,
+    // },
     breakpoints: {
         320: {
             slidesPerView: 1,
@@ -81,9 +81,9 @@ const swiperFrame = new Swiper('.swiper-frame', {
         el: '.swiper-pagination',
         type: 'bullets',
     },
-    autoplay: {
-        delay: 3300,
-    },
+    // autoplay: {
+    //     delay: 3300,
+    // },
     breakpoints: {
         320: {
             slidesPerView: 1,
@@ -115,9 +115,9 @@ const swiperCottage = new Swiper('.swiper-cottage', {
         el: '.swiper-pagination',
         type: 'bullets',
     },
-    autoplay: {
-        delay: 3300,
-    },
+    // autoplay: {
+    //     delay: 3300,
+    // },
     breakpoints: {
         320: {
             slidesPerView: 1,
@@ -149,9 +149,9 @@ const swiperBath = new Swiper('.swiper-bath', {
         el: '.swiper-pagination',
         type: 'bullets',
     },
-    autoplay: {
-        delay: 3300,
-    },
+    // autoplay: {
+    //     delay: 3300,
+    // },
     breakpoints: {
         320: {
             slidesPerView: 1,
