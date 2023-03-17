@@ -13,6 +13,11 @@
     font-family: var(--font-family-Roboto);
 }
 
+.text-no-wrap {
+    white-space: nowrap;
+    text-wrap: unset;
+}
+
 /* FONT SIZE */
 
 .fs-112 {

@@ -10,11 +10,7 @@ maybeScroll();
 function  maybeScroll() {
     let url = window.location;
     
-    console.log(url);
-    
-    console.log(url.search);
     let searchitems = url.search.split("?");
-    console.log(url.search.split("?"));
 
     searchitems.forEach(i => {
         if(i !== "" && currentUrls.includes(i)) {
