@@ -203,6 +203,8 @@ button,
 [type="submit"] {
     -webkit-appearance: button;
     cursor: pointer;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 /**
