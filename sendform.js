@@ -7,7 +7,13 @@ var phone = $("#phone").val();
 var date = $("#date").val();
 var comment = $("#comment").val();
 
-if ('' === phone) return alert('Введите номер телефона');
+if (phone === '' || phone === null) {
+    return alert('Введите номер телефона');
+} else if(phone.length < 11) {
+    return alert('Недостаточно цифр в номере телефона');
+} else if(phone.toString()[0] != 8) {
+    return alert('Первый символ номера телефона должен быть 8');
+}
 
 $("#send").replaceWith("<em>отправка...</em>");
 $.ajax({
